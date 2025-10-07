@@ -41,7 +41,7 @@ jobs:
       - name: Update the user email config.
         run: git config --local user.email "github-actions[bot]@users.noreply.github.com"
       - name: Stage changed files.
-        run: git add dist/*
+        run: git add -f dist/*
       - name: Commit changed files.
         run: git commit -m "Auto updating presentation files."
       - name: Push code to main
