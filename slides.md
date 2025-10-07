@@ -80,12 +80,13 @@ section {
 }
 .logo-row img {
   height: 128px;
-  width: auto;
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.10));
+  width: 128px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.10));
   background: white;
   border-radius: 12px;
-  padding: 6px 12px;
-  border: 2px solid #e0e0e0;
+  padding: 4px 6px;
+  box-sizing: border-box;
 }
 </style>
 
