@@ -59,11 +59,11 @@ section {
 }
 .img-fun-facts {
   position: absolute;
-  top: 48px;
+  top: 24px;
   left: 50%;
   transform: translateX(-50%);
   display: block;
-  width: 90%;
+  width: 65%;
   max-width: 90vw;
   height: auto;
   margin: 0 auto;
@@ -88,6 +88,14 @@ section {
   padding: 4px 6px;
   box-sizing: border-box;
 }
+
+.logo-row img.pycon {
+    padding:24px;
+}
+
+.mw50 {
+    width: 50%;
+}
 </style>
 
 
@@ -100,7 +108,7 @@ Lots of Plone products, one aging Jenkins box...
 Time to evolve.
 
 <div class="logo-row">
-  <img src="assets/pyconfinland.png" alt="PyCon Finland">
+  <img class="pycon" src="assets/pyconfinland.png" alt="PyCon Finland">
   <img src="assets/ploneconf2025.png" alt="PloneConf 2025">
   <img src="assets/imio_logo.svg" alt="iMio">
 </div>
@@ -181,11 +189,15 @@ Q&A spills into hallway 🙂
 
 ![bg](assets/ploneconf2022.png)
 
-[How we created, deployed and updated over 200 websites at iMio with no downtime.](https://www.youtube.com/watch?v=z-5xx-vKYpc)
+<div class="mw50">
+<a href="https://www.youtube.com/watch?v=z-5xx-vKYpc">How we created, deployed and updated over 200 websites at iMio with no downtime.</a>
+
 
 Key difference today:
 - 2015: GitHub Actions did NOT exist
 - Ecosystem maturity (2022 → 2025): composite actions, Action Runner Controler
+</div>
+
 
 ---
 ![bg](assets/fond4.png)
