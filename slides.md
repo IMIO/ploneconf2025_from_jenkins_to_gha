@@ -57,7 +57,36 @@ section {
 .img-text-row-imio .text {
   flex: 1;
 }
-
+.img-fun-facts {
+  position: absolute;
+  top: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 90%;
+  max-width: 90vw;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+.logo-row img {
+  height: 128px;
+  width: auto;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.10));
+  background: white;
+  border-radius: 12px;
+  padding: 6px 12px;
+  border: 2px solid #e0e0e0;
+}
 </style>
 
 
@@ -69,6 +98,11 @@ section {
 Lots of Plone products, one aging Jenkins box...
 Time to evolve.
 
+<div class="logo-row">
+  <img src="assets/pyconfinland.png" alt="PyCon Finland">
+  <img src="assets/ploneconf2025.png" alt="PloneConf 2025">
+  <img src="assets/imio_logo.svg" alt="iMio">
+</div>
 
 <!-- _footer: "" -->
 
@@ -168,7 +202,7 @@ Risk ↑ / Confidence ↓ / Bus factor = 1.5
 
 ---
 ![bg](assets/fond5.png)
-![](cedric-funfacts.jpg)
+<img src="assets/cedric-funfacts.jpg" alt="Fun facts" class="img-fun-facts" />
 
 
 ---
@@ -181,7 +215,6 @@ Risk ↑ / Confidence ↓ / Bus factor = 1.5
 - Horizontal scale via Kubernetes
 - Isolation per job
 
-![w:675 h:255](blob1.png)
 
 ---
 ![bg](assets/fond7.png)
