@@ -15,23 +15,49 @@ footer: "PloneConf & PyCon Finland 2025 • iMio • Jenkins Out → GitHub Acti
 section {
  font-family: "Quicksand", sans-serif;
 }
-img {
-    border-radius: 16px;
-}
-.img-text-row {
+.img-text-row-bio {
   display: flex;
   align-items: flex-start;
   gap: 24px;
 }
-.img-text-row img {
+.img-text-row-bio img {
   width: 128px;
   height: 128px;
   border-radius: 16px;
   object-fit: cover;
 }
-.img-text-row .text {
+.img-text-row-bio .text {
   flex: 1;
 }
+.github-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+.github-row img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+.github-row .username {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.img-text-row-imio {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.img-text-row-imio img {
+  width:35%;
+  height:35%;
+  border-radius: 16px;
+}
+.img-text-row-imio .text {
+  flex: 1;
+}
+
 </style>
 
 
@@ -50,43 +76,58 @@ Time to evolve.
 
 ## Who ?
 
-![bg](assets/fond11.png)
+![bg](assets/fond7.png)
 
 ### Benoît
 
-<div class="img-text-row">
+<div class="img-text-row-bio">
   <img src="assets/benoit.jpg" alt="Benoît">
   <div class="text">
     DevOps Engineer at iMio · 10+ years in Plone & open source<br>
     Automation, Docker, Kubernetes, IaC<br>
     Active Plone contributor
   </div>
-
+</div>
+<div class="github-row">
+    <img src="assets/github.png" alt="GitHub" />
+    <span class="username">bsuttor</span>
+</div>
 
 ### Rémi
 
-<div class="img-text-row">
+<div class="img-text-row-bio">
   <img src="assets/remi.jpg" alt="Rémi">
   <div class="text">
-    16 years in municipal IT · SmartWeb @ iMio since 2022 · DevOps since 2024 · Open-source & learning mindset
+    16 years in municipal IT · SmartWeb @ iMio since 2022 <br>DevOps since 2024
+    <br>Open-source & learning mindset
   </div>
-
-
-![w:48 h:48](github.png) remdub
+</div>
+<div class="github-row">
+    <img src="assets/github.png" alt="GitHub" />
+    <span class="username">remdub</span>
+</div>
 
 ---
+
 ![bg](assets/fond.png)
 ## iMio
+<div class="img-text-row-imio">
+  <img src="assets/imio-garcon.png" alt="iMio garçon">
+  <div class="text">
+    <ul>
+    <li>Provides IT services to ~400 local authorities</li>
+    <li>Municipalities, CPAS, provinces, police zones, rescue zones</li>
+    <li>11 different applications → 1200+ instances</li>
+    <li>Our mission: Mutualize IT solutions and support digitalization</li>
+    </ul>
+  </div>
+</div>
 
-- Provides IT services to ~400 local authorities
-- Municipalities, CPAS, provinces, police zones, rescue zones
-- 11 different applications → 1200+ instances
-- Our mission: Mutualize IT solutions and support digitalization
 
 
 
 ---
-![bg](assets/fond2.png)
+![bg](assets/fond4.png)
 ## Agenda (25 min)
 
 1. Context & Legacy Pain (3')
