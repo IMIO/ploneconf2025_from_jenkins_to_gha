@@ -1,19 +1,48 @@
 ---
 title: "Jenkins Out, GitHub Actions In: How We Made the Leap"
 subtitle: "From a Fragile Physical Box to Cloud-Native, Consistent CI/CD"
-conference: "Python (Plone) Conference Finland"
+conference: "PyCon Finland 2025"
 author: "Benoît Suttor & Rémi Dubois - iMio"
 marp: true
 paginate: true
 footer: "PloneConf & PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In"
+
 ---
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+</style>
+<style>
+section {
+ font-family: "Quicksand", sans-serif;
+}
+img {
+    border-radius: 16px;
+}
+.img-text-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.img-text-row img {
+  width: 128px;
+  height: 128px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.img-text-row .text {
+  flex: 1;
+}
+</style>
+
 
 # Jenkins Out, GitHub Actions In
 ### How We Made the Leap
 (Plone-focused CI/CD modernization)
+![bg](assets/fond.png)
 
 Lots of Plone products, one aging Jenkins box...
 Time to evolve.
+
 
 <!-- _footer: "" -->
 
@@ -21,20 +50,32 @@ Time to evolve.
 
 ## Who ?
 
+![bg](assets/fond11.png)
+
 ### Benoît
 
-![w:128 h:128](benoit.jpg) DevOps Engineer at iMio · 10+ years in Plone & open source · Automation, Docker, Kubernetes, IaC · Active Plone contributor
-![w:48 h:48](github.png) bsuttor
+<div class="img-text-row">
+  <img src="assets/benoit.jpg" alt="Benoît">
+  <div class="text">
+    DevOps Engineer at iMio · 10+ years in Plone & open source<br>
+    Automation, Docker, Kubernetes, IaC<br>
+    Active Plone contributor
+  </div>
 
 
 ### Rémi
 
-![w:128 h:128](remi.jpg) 16 yrs in municipal IT · SmartWeb @ iMio since 2022 · DevOps since 2024 · Open-source & learning mindset
+<div class="img-text-row">
+  <img src="assets/remi.jpg" alt="Rémi">
+  <div class="text">
+    16 years in municipal IT · SmartWeb @ iMio since 2022 · DevOps since 2024 · Open-source & learning mindset
+  </div>
+
 
 ![w:48 h:48](github.png) remdub
 
 ---
-
+![bg](assets/fond.png)
 ## iMio
 
 - Provides IT services to ~400 local authorities
@@ -45,7 +86,7 @@ Time to evolve.
 
 
 ---
-
+![bg](assets/fond2.png)
 ## Agenda (25 min)
 
 1. Context & Legacy Pain (3')
@@ -59,19 +100,19 @@ Time to evolve.
 Q&A spills into hallway 🙂
 
 ---
+![bg](assets/fond3.png)
+### Throwback: PloneConf 2022
 
-## Throwback: PloneConf 2022 (Context)
+![bg](assets/ploneconf2022.png)
 
-Prior talk:
-[How we created, deployed and updated over 200 websites at iMio with no downtime. (PloneConf 2022)](https://www.youtube.com/watch?v=z-5xx-vKYpc)
+[How we created, deployed and updated over 200 websites at iMio with no downtime.](https://www.youtube.com/watch?v=z-5xx-vKYpc)
 
 Key difference today:
 - 2015: GitHub Actions did NOT exist
 - Ecosystem maturity (2022 → 2025): composite actions, Action Runner Controler
 
-We revisited assumptions with fresher tooling.
-
 ---
+![bg](assets/fond4.png)
 
 ## The Legacy Setup (Reality Check)
 
@@ -85,12 +126,12 @@ We revisited assumptions with fresher tooling.
 Risk ↑ / Confidence ↓ / Bus factor = 1.5
 
 ---
-
-![bg fit](cedric-funfacts.jpg)
+![bg](assets/fond5.png)
+![](cedric-funfacts.jpg)
 
 
 ---
-
+![bg](assets/fond6.png)
 ## Why Migrate? (High-Level)
 
 - Consolidate around where code lives (GitHub)
@@ -99,9 +140,10 @@ Risk ↑ / Confidence ↓ / Bus factor = 1.5
 - Horizontal scale via Kubernetes
 - Isolation per job
 
+![w:675 h:255](blob1.png)
 
 ---
-
+![bg](assets/fond7.png)
 ## Why Not GitLab CI?
 
 We already had GitLab internally BUT:
@@ -113,7 +155,7 @@ We already had GitLab internally BUT:
 Decision principle: minimize friction + follow upstream culture.
 
 ---
-
+![bg](assets/fond8.png)
 ## Migration Timeline
 
 TODO : plus fancy
@@ -146,7 +188,7 @@ We catalogued every Jenkins job:
 - xx migrated mostly as-is -->
 
 ---
-
+![bg](assets/fond9.png)
 ## Talking to Teams
 
 Questions we asked:
@@ -162,7 +204,7 @@ etc
 TODO
 
 ---
-
+![bg](assets/fond10.png)
 ## Design Goals
 
 - One mental model per repo (tests → build → deploy)
@@ -173,7 +215,7 @@ TODO
 - Observability
 
 ---
-
+![bg](assets/fond11.png)
 ## The 'gha' Repository (Building Blocks)
 
 TODO
@@ -191,7 +233,7 @@ Link: https://github.com/IMIO/gha
 Encapsulate complexity → keep workflows thin.
 
 ---
-
+![bg](assets/fond.png)
 ## Runner Strategy
 
 Self-hosted via ARC:
@@ -204,7 +246,7 @@ Why:
 - Same network (reach internal services / servers)
 
 ---
-
+![bg](assets/fond2.png)
 ## Runner Docker Image
 
 Includes:
@@ -216,7 +258,7 @@ Includes:
 Versioned & scanned (Trivy) → “infrastructure you can diff.”
 
 ---
-
+![bg](assets/fond3.png)
 ## Branch / Deploy Flow (Visual)
 
 ### TODO (demo ?)
@@ -235,7 +277,7 @@ flowchart LR
 Consistent rules → reduces cognitive load.
 
 ---
-
+![bg](assets/fond4.png)
 ## Environment Policy
 
 Same as Jenkins:
@@ -246,7 +288,7 @@ Same as Jenkins:
 - Rollback: git tag revert + redeploy (immutable images retained)
 
 ---
-
+![bg](assets/fond5.png)
 ## Rundeck Jobs (Legacy Tie-In)
 
 Some long-running operations still in Rundeck:
@@ -257,7 +299,7 @@ Some long-running operations still in Rundeck:
 GHA triggers via API (signed request)
 
 ---
-
+![bg](assets/fond6.png)
 ## Observability
 
 - Lightweight Mattermost notification: short status + link (no noisy full logs).
@@ -269,7 +311,7 @@ GHA triggers via API (signed request)
 Dashboard WIP
 
 ---
-
+![bg](assets/fond7.png)
 ## Fun Fact (Timing Was Perfect)
 
 Physical Jenkins server died (disk failure)
@@ -278,7 +320,7 @@ No data salvage possible. (but not needed)
 Migration ROI validated instantly 🙂
 
 ---
-
+![bg](assets/fond8.png)
 ## Current WIP / Future
 
 - Shared reusable workflows (org-level)
@@ -287,13 +329,13 @@ Migration ROI validated instantly 🙂
 - Dashboard replacing noisy Mattermost spam
 
 ---
-
+![bg](assets/fond9.png)
 ## Conclusion
 
 Migration is an opportunity to simplify, not just port.
 
 ---
-
+![bg](assets/fond10.png)
 ## Resources
 
 TODO : compléter 
@@ -308,7 +350,7 @@ TODO : compléter
     https://argo-cd.readthedocs.io/
 
 ---
-
+![bg](assets/fond11.png)
 ## Thank You
 
 Questions?
