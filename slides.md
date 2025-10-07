@@ -8,21 +8,41 @@ paginate: true
 footer: "PloneConf & PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In"
 ---
 
-<!--
-Format: Reveal.js / Marp-compatible Markdown.
-Each '---' = new slide.
-Add or remove detail depending on audience interaction.
-Approx time allocations noted in comments.
--->
-
-# Jenkins Out, GitHub Actions In  
-### How We Made the Leap  
+# Jenkins Out, GitHub Actions In
+### How We Made the Leap
 (Plone-focused CI/CD modernization)
 
-Small team, lots of Plone products, one aging Jenkins box...  
+Lots of Plone products, one aging Jenkins box...
 Time to evolve.
 
 <!-- _footer: "" -->
+
+---
+
+## Who ?
+
+### Benoît
+
+![w:128 h:128](benoit.jpg) DevOps Engineer at iMio · 10+ years in Plone & open source · Automation, Docker, Kubernetes, IaC · Active Plone contributor
+![w:48 h:48](github.png) bsuttor
+
+
+### Rémi
+
+![w:128 h:128](remi.jpg) 16 yrs in municipal IT · SmartWeb @ iMio since 2022 · DevOps since 2024 · Open-source & learning mindset
+
+![w:48 h:48](github.png) remdub
+
+---
+
+## iMio
+
+- Provides IT services to ~400 local authorities
+- Municipalities, CPAS, provinces, police zones, rescue zones
+- 11 different applications → 1200+ instances
+- Our mission: Mutualize IT solutions and support digitalization
+
+
 
 ---
 
@@ -47,7 +67,7 @@ Prior talk:
 
 Key difference today:
 - 2015: GitHub Actions did NOT exist
-- Ecosystem maturity (2022 → 2025): composite actions, ARC
+- Ecosystem maturity (2022 → 2025): composite actions, Action Runner Controler
 
 We revisited assumptions with fresher tooling.
 
@@ -64,6 +84,10 @@ We revisited assumptions with fresher tooling.
 
 Risk ↑ / Confidence ↓ / Bus factor = 1.5
 
+---
+
+![bg fit](cedric-funfacts.jpg)
+
 
 ---
 
@@ -75,11 +99,6 @@ Risk ↑ / Confidence ↓ / Bus factor = 1.5
 - Horizontal scale via Kubernetes
 - Isolation per job
 
----
-
-## Timeline
-
-TODO
 
 ---
 
@@ -115,7 +134,7 @@ timeline
     2025-?: Plone in Kubernetes WIP
 ```
 
----
+<!-- ---
 
 ## Inventory & Rationalization
 
@@ -124,20 +143,17 @@ We catalogued every Jenkins job:
 - xx obsolete (removed)
 - xx merged (duplicates)
 - xx rewritten from scratch
-- xx migrated mostly as-is
+- xx migrated mostly as-is -->
 
 ---
 
 ## Talking to Teams
 
 Questions we asked:
-1. What does "green" mean for you?
-2. Which branches matter?
-3. Release cadence?
-4. Deployment anxiety triggers?
-5. Secrets / compliance needs?
 
-Result → unified mental model + acceptance.
+1. Does the actual workflow still suits your needs ?
+2. How would you improve it ?
+
 
 Qu'est-ce qui trigger quoi ? Est-ce toujours utile ?
 Comment sont lancés les tests ? (buildout & co)
@@ -282,16 +298,21 @@ Migration is an opportunity to simplify, not just port.
 
 TODO : compléter 
 
-- Actions Runner Controller: https://github.com/actions/actions-runner-controller  
-- IMIO GHA composite actions: https://github.com/IMIO/gha  
-- zest.releaser: https://pypi.org/project/zest.releaser/  
-- ArgoCD: https://argo-cd.readthedocs.io/  
+- Actions Runner Controller
+    https://github.com/actions/actions-runner-controller
+- IMIO GHA composite actions
+    https://github.com/IMIO/gha
+- zest.releaser
+    https://pypi.org/project/zest.releaser/
+- ArgoCD
+    https://argo-cd.readthedocs.io/
 
 ---
 
 ## Thank You
 
 Questions?
+
 
 
 <!-- END -->
