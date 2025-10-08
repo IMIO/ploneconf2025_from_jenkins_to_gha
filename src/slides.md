@@ -126,9 +126,9 @@ Time to evolve.
 <div class="img-text-row-bio">
   <img src="assets/benoit.jpg" alt="Benoît">
   <div class="text">
-    DevOps Engineer at iMio · 10+ years in Plone & open source<br>
+    DevOps Engineer at iMio · 15 years in Plone & open source<br>
     Automation, Docker, Kubernetes, IaC<br>
-    Active Plone contributor
+    Plone contributor, Plone foundation member
   </div>
 </div>
 <div class="github-row">
@@ -249,26 +249,25 @@ Decision principle: minimize friction + follow upstream culture.
 
 ---
 ![bg](assets/fond8.png)
-## Migration Timeline
+## Timeline
 
-TODO : plus fancy
+<img src="assets/MigrationPhases.png" alt="Migration phases" class="img-migration-phases" />
+<!-- Benoît
+https://www.mermaidchart.com/app/projects/ad5d26cc-69a9-4a3b-b625-7a64ef6c03e8/diagrams/7eb0a929-db20-4674-9341-dfd996eb8eaa/version/v0.1/edit
 
-```mermaid
 timeline
     title Migration Phases
     2021-02: Some repos using GHA tests
     2024-06: Inventory Jenkins pipelines / classify (keep / refactor / drop)
     2024-07: Build base runner Docker image + ARC PoC
-    2024-07: Create central 'gha' repo (composite actions)
-    2024-07: Progressive cutover (deploy stages → GHA)
+           : Create central 'gha' repo (composite actions)
+           : Progressive cutover (deploy stages → GHA)
     2024-08: Dual-run (Jenkins + GHA) for critical products
     2024-09: Full production deployments via GHA
-    2024-09: Final failover (Jenkins disk crash - irreversible)
-    2024-09: Jenkins decommission
+           : Final failover (Jenkins disk crash - irreversible)
+           : Jenkins decommission
     2025-06: Shared workflows
-    2025-?: Plone in Kubernetes WIP
-```
-<!-- Benoît -->
+-->
 
 ---
 ![bg](assets/fond9.png)
