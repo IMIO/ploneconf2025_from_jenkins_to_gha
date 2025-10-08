@@ -1,0 +1,88 @@
+/* @theme imio */
+@import 'default';
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+section {
+ font-family: "Quicksand", sans-serif;
+}
+.img-text-row-bio {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.img-text-row-bio img {
+  width: 128px;
+  height: 128px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.img-text-row-bio .text {
+  flex: 1;
+}
+.github-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+.github-row img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+.github-row .username {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.img-text-row-imio {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.img-text-row-imio img {
+  width:35%;
+  height:35%;
+  border-radius: 16px;
+}
+.img-text-row-imio .text {
+  flex: 1;
+}
+.img-fun-facts {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 65%;
+  max-width: 90vw;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+.logo-row img {
+  height: 128px;
+  width: 128px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.10));
+  background: white;
+  border-radius: 12px;
+  padding: 4px 6px;
+  box-sizing: border-box;
+}
+
+.logo-row img.pycon {
+    padding:24px;
+}
+
+.mw50 {
+    width: 50%;
+}
