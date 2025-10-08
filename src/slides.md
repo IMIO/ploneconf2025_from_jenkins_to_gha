@@ -136,6 +136,7 @@ Time to evolve.
     <span class="username">bsuttor</span>
 </div>
 
+
 ### Rémi
 
 <div class="img-text-row-bio">
@@ -149,6 +150,8 @@ Time to evolve.
     <img src="assets/github.png" alt="GitHub" />
     <span class="username">remdub</span>
 </div>
+
+<!-- Benoît & Rémi-->
 
 ---
 
@@ -167,8 +170,7 @@ Time to evolve.
 </div>
 
 
-
-
+<!-- Rémi -->
 ---
 ![bg](assets/fond4.png)
 ## Agenda (25 min)
@@ -183,6 +185,7 @@ Time to evolve.
 
 Q&A spills into hallway 🙂
 
+<!-- Benoît -->
 ---
 ![bg](assets/fond3.png)
 ### Throwback: PloneConf 2022
@@ -198,6 +201,7 @@ Key difference today:
 - Ecosystem maturity (2022 → 2025): composite actions, Action Runner Controler
 </div>
 
+<!-- Benoît -->
 
 ---
 ![bg](assets/fond4.png)
@@ -212,12 +216,12 @@ Key difference today:
 - Snowflake state (deployed with iac, but not maintained anymore)
 
 Risk ↑ / Confidence ↓ / Bus factor = 1.5
-
+<!-- Benoît -->
 ---
 ![bg](assets/fond5.png)
 <img src="assets/cedric-funfacts.jpg" alt="Fun facts" class="img-fun-facts" />
 
-
+<!-- Rémi -->
 ---
 ![bg](assets/fond6.png)
 ## Why Migrate? (High-Level)
@@ -228,7 +232,7 @@ Risk ↑ / Confidence ↓ / Bus factor = 1.5
 - Horizontal scale via Kubernetes
 - Isolation per job
 
-
+<!-- Rémi -->
 ---
 ![bg](assets/fond7.png)
 ## Why Not GitLab CI?
@@ -240,6 +244,8 @@ We already had GitLab internally BUT:
 - ARC (actions-runner-controller) maturity
 
 Decision principle: minimize friction + follow upstream culture.
+
+<!-- Rémi -->
 
 ---
 ![bg](assets/fond8.png)
@@ -262,17 +268,7 @@ timeline
     2025-06: Shared workflows
     2025-?: Plone in Kubernetes WIP
 ```
-
-<!-- ---
-
-## Inventory & Rationalization
-
-We catalogued every Jenkins job:
-- xx total discovered
-- xx obsolete (removed)
-- xx merged (duplicates)
-- xx rewritten from scratch
-- xx migrated mostly as-is -->
+<!-- Benoît -->
 
 ---
 ![bg](assets/fond9.png)
@@ -289,6 +285,7 @@ Comment sont lancés les tests ? (buildout & co)
 Quand et quels tags pour construire les images ?
 etc
 TODO
+
 
 ---
 ![bg](assets/fond10.png)
@@ -319,6 +316,8 @@ Link: https://github.com/IMIO/gha
 
 Encapsulate complexity → keep workflows thin.
 
+<!-- Rémi -->
+
 ---
 ![bg](assets/fond.png)
 ## Runner Strategy
@@ -331,7 +330,7 @@ Why:
 - Resource quotas per namespace
 - Fast spin-up (prebaked image)
 - Same network (reach internal services / servers)
-
+<!-- Rémi -->
 ---
 ![bg](assets/fond2.png)
 ## Runner Docker Image
@@ -343,7 +342,7 @@ Includes:
 - caching dirs structured (/cache/buildout, pip)
 
 Versioned & scanned (Trivy) → “infrastructure you can diff.”
-
+<!-- Benoît -->
 ---
 ![bg](assets/fond3.png)
 ## Branch / Deploy Flow (Visual)
@@ -363,16 +362,19 @@ flowchart LR
 
 Consistent rules → reduces cognitive load.
 
+<!-- Benoît -->
+
 ---
 ![bg](assets/fond4.png)
 ## Environment Policy
 
 Same as Jenkins:
 
-- Dev: every merge to `dev` auto-deploys to specific sandbox instances
 - Staging: every merge to `main` auto-deploys to staging instances (copy of some prod instances)
 - Prod: only annotated tag on `main` + schedule (3 AM next day)
-- Rollback: git tag revert + redeploy (immutable images retained)
+- Rollback: git tag revert + redeploy (immutable images retained) (! Database)
+
+<!-- Benoît -->
 
 ---
 ![bg](assets/fond5.png)
@@ -385,6 +387,8 @@ Some long-running operations still in Rundeck:
 
 GHA triggers via API (signed request)
 
+<!-- Rémi -->
+
 ---
 ![bg](assets/fond6.png)
 ## Observability
@@ -394,8 +398,9 @@ GHA triggers via API (signed request)
 - Plone logs : rundeck & Kibana
 - Container-level metrics (Prometheus + Grafana)
 
-
 Dashboard WIP
+
+<!-- Rémi -->
 
 ---
 ![bg](assets/fond7.png)
@@ -406,6 +411,8 @@ BEFORE migration completed.
 No data salvage possible. (but not needed)
 Migration ROI validated instantly 🙂
 
+<!-- Benoît -->
+
 ---
 ![bg](assets/fond8.png)
 ## Current WIP / Future
@@ -415,32 +422,29 @@ Migration ROI validated instantly 🙂
 - Align with [plone/meta] best practices (watching upstream)
 - Dashboard replacing noisy Mattermost spam
 
+<!-- Benoît & Rémi-->
+
 ---
 ![bg](assets/fond9.png)
 ## Conclusion
 
 Migration is an opportunity to simplify, not just port.
 
+<!-- Benoît & Rémi -->
+
+
 ---
 ![bg](assets/fond10.png)
-## Resources
+## Thank you
 
-TODO : compléter 
 
-- Actions Runner Controller
-    https://github.com/actions/actions-runner-controller
-- IMIO GHA composite actions
-    https://github.com/IMIO/gha
-- zest.releaser
-    https://pypi.org/project/zest.releaser/
-- ArgoCD
-    https://argo-cd.readthedocs.io/
+- Actions Runner Controller: https://github.com/actions/actions-runner-controller
+- IMIO GHA composite actions: https://github.com/IMIO/gha
+- zest.releaser: https://pypi.org/project/zest.releaser/
+- ArgoCD: https://argo-cd.readthedocs.io/
+- Our slides: https://imio.github.io/ploneconf2025_from_jenkins_to_gha/
 
----
-![bg](assets/fond11.png)
-## Thank You
-
-Questions?
+## Questions ?
 
 
 
