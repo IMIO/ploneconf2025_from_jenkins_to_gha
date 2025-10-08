@@ -195,45 +195,53 @@ title Migration Phases<br />
 </ul>
 <footer>PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In</footer>
 </section>
-</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-paginate="true" data-footer="PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In" lang="C" data-marpit-pagination="12" style="" data-marpit-pagination-total="23" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-footer="PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In" lang="C" data-marpit-pagination="13" style="--paginate:true;--footer:PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In;" data-marpit-pagination-total="23" data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;assets/fond11.png&quot;);"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-footer="PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In" lang="C" data-marpit-pagination="13" style="--paginate:true;--footer:PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In;" data-marpit-pagination-total="23" data-marpit-advanced-background="content">
-<h2 id="the-gha-repository-building-blocks">The 'gha' Repository (Building Blocks)</h2>
-<p>TODO</p>
+</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-paginate="true" data-footer="PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In" lang="C" data-marpit-pagination="12" style="" data-marpit-pagination-total="23" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-footer="PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In" lang="C" data-marpit-pagination="13" style="--paginate:true;--footer:PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In;" data-marpit-pagination-total="23" data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;assets/fond4.png&quot;);"></figure><figure style="background-image:url(&quot;assets/github-gha.png&quot;);"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-footer="PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In" lang="C" data-marpit-pagination="13" style="--paginate:true;--footer:PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In;" data-marpit-pagination-total="23" data-marpit-advanced-background="content">
+<h2 id="the-gha-repository">The 'gha' Repository</h2>
+
 <p>Reusable composite actions (examples):</p>
 <ul>
-<li>setup-plone-environment</li>
-<li>run-plone-tests</li>
-<li>build-plone-image</li>
-<li>deploy-helm-release</li>
-<li>notify-mattermost (rate-limited)</li>
-<li>tag-and-publish (integrates zest.releaser conventions)</li>
+<li>Build and push a docker image</li>
+<li>Run plone tests</li>
+<li>Build deb package</li>
+<li>Release Helm Chat</li>
+<li>Notify on mattermost</li>
 </ul>
 <p>Link: <a href="https://github.com/IMIO/gha">https://github.com/IMIO/gha</a></p>
-<p>Encapsulate complexity → keep workflows thin.</p>
+<h3 id="encapsulate-complexity">Encapsulate complexity</h3>
+<h3 id="%E2%86%92-keep-workflows-thin">→ Keep workflows thin.</h3>
 <footer>PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In</footer>
 </section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-paginate="true" data-footer="PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In" lang="C" data-marpit-pagination="13" style="" data-marpit-pagination-total="23" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-footer="PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In" lang="C" data-marpit-pagination="14" style="--paginate:true;--footer:PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In;" data-marpit-pagination-total="23" data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;assets/fond.png&quot;);"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-footer="PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In" lang="C" data-marpit-pagination="14" style="--paginate:true;--footer:PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In;" data-marpit-pagination-total="23" data-marpit-advanced-background="content">
 <h2 id="runner-strategy">Runner Strategy</h2>
-<p>Self-hosted via ARC:<br />
-<a href="https://github.com/actions/actions-runner-controller">https://github.com/actions/actions-runner-controller</a></p>
-<p>Why:</p>
-<ul>
-<li>Auto-scaling ephemeral runners (security + cleanliness)</li>
-<li>Resource quotas per namespace</li>
-<li>Fast spin-up (prebaked image)</li>
-<li>Same network (reach internal services / servers)</li>
-</ul>
+<div class="img-text-row-imio">
+  <img src="assets/argocd.png" alt="argocd" />
+  <div class="text">
+    <h4>Self-hosted via ARC</h4>
+    <ul>
+    <li>Auto-scaling ephemeral runners (security + cleanliness)</li>
+    <li>Resource quotas per namespace</li>
+    <li>Fast spin-up (prebaked image)</li>
+    <li>Same network (reach internal services / servers)</li>
+    </ul>
+  </div>
+</div>
+<p><a href="https://github.com/actions/actions-runner-controller">https://github.com/actions/actions-runner-controller</a></p>
 <footer>PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In</footer>
 </section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-paginate="true" data-footer="PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In" lang="C" data-marpit-pagination="14" style="" data-marpit-pagination-total="23" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-footer="PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In" lang="C" data-marpit-pagination="15" style="--paginate:true;--footer:PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In;" data-marpit-pagination-total="23" data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;assets/fond2.png&quot;);"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-footer="PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In" lang="C" data-marpit-pagination="15" style="--paginate:true;--footer:PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In;" data-marpit-pagination-total="23" data-marpit-advanced-background="content">
 <h2 id="runner-docker-image">Runner Docker Image</h2>
-<p>Includes:</p>
-<ul>
-<li>Python (multiple versions)</li>
-<li>Plone buildout deps (C libs: libxml2, libjpeg, zlib...)</li>
-<li>Node.js</li>
-<li>caching dirs structured (/cache/buildout, pip)</li>
-</ul>
-<p>Versioned &amp; scanned (Trivy) → “infrastructure you can diff.”</p>
+<div class="img-text-row-imio">
+  <img src="assets/imio-container.png" alt="imio-container" />
+  <div class="text">
+    <h4>Includes</h4>
+    <ul>
+      <li>Python (multiple versions)</li>
+      <li>Plone buildout deps (C libs: libxml2, libjpeg, zlib...)</li>
+      <li>caching dirs structured (/cache/buildout, pip)</li>
+      <li>Versioned & scanned (Trivy)</li>
+    </ul>
+  </div>
+</div>
 <footer>PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In</footer>
 </section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-paginate="true" data-footer="PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In" lang="C" data-marpit-pagination="15" style="" data-marpit-pagination-total="23" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-footer="PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In" lang="C" data-marpit-pagination="16" style="--paginate:true;--footer:PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In;" data-marpit-pagination-total="23" data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;assets/fond3.png&quot;);"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-footer="PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In" lang="C" data-marpit-pagination="16" style="--paginate:true;--footer:PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In;" data-marpit-pagination-total="23" data-marpit-advanced-background="content">
@@ -270,7 +278,7 @@ title Migration Phases<br />
 <li>Instances reboot</li>
 <li>Upgrade-steps</li>
 </ul>
-<p>GHA triggers via API (signed request)</p>
+<p>GHA triggers via Rest API</p>
 <footer>PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In</footer>
 </section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-paginate="true" data-footer="PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In" lang="C" data-marpit-pagination="18" style="" data-marpit-pagination-total="23" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-footer="PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In" lang="C" data-marpit-pagination="19" style="--paginate:true;--footer:PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In;" data-marpit-pagination-total="23" data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;assets/fond6.png&quot;);"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-footer="PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In" lang="C" data-marpit-pagination="19" style="--paginate:true;--footer:PloneConf &amp; PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In;" data-marpit-pagination-total="23" data-marpit-advanced-background="content">
