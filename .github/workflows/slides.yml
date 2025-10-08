@@ -3,6 +3,17 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   publish:
@@ -34,15 +45,25 @@ jobs:
           name: slides
           path: |
             dist/*.pdf
-            dist/*.pptx
       - name: Update username config.
         run: git config --local user.name "github-actions[bot]"
-
       - name: Update the user email config.
         run: git config --local user.email "github-actions[bot]@users.noreply.github.com"
       - name: Stage changed files.
-        run: git add -f dist/*
+        run: |
+          git mv dist/slides.html dist/index.html
+          git add -f dist/index.html
       - name: Commit changed files.
         run: git commit -m "Auto updating presentation files."
       - name: Push code to main
         run: git push origin main
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: 'dist'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
