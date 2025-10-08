@@ -40,12 +40,13 @@ Time to evolve.
     DevOps Engineer at iMio · 15 years in Plone & open source<br>
     Automation, Docker, Kubernetes, IaC<br>
     Plone contributor, Plone foundation member
-  </div>
-</div>
-<div class="github-row">
-    <img src="assets/github.png" alt="GitHub" />
+    <div class="github-row">
+      <img src="assets/github.png" alt="GitHub" />
     <span class="username">bsuttor</span>
 </div>
+  </div>
+</div>
+
 
 
 ### Rémi
@@ -55,18 +56,18 @@ Time to evolve.
   <div class="text">
     16 years in municipal IT · SmartWeb @ iMio since 2022 <br>DevOps since 2024
     <br>Open-source & learning mindset
-  </div>
-</div>
-<div class="github-row">
+    <div class="github-row">
     <img src="assets/github.png" alt="GitHub" />
     <span class="username">remdub</span>
+</div>
+  </div>
 </div>
 
 <!-- Benoît & Rémi-->
 
 ---
 
-![bg](assets/fond.png)
+![bg](assets/fond4.png)
 ## iMio
 <div class="img-text-row-imio">
   <img src="assets/imio-garcon.png" alt="iMio garçon" />
@@ -83,7 +84,7 @@ Time to evolve.
 
 <!-- Rémi -->
 ---
-![bg](assets/fond4.png)
+![bg](assets/fond8.png)
 ## Agenda (25 min)
 
 <div class="img-text-row-imio">
@@ -210,9 +211,9 @@ timeline
     <ol>
     <li>Does the actual workflow still suits your needs ?</li>
     <li>How would you improve it ?</li>
-    <li>Qu'est-ce qui trigger quoi ? Est-ce toujours utile ?</li>
-    <li>Comment sont lancés les tests ? (buildout & co)</li>
-    <li>Quand et quels tags pour construire les images ?</li>
+    <li>Qu'est-ce qui trigger quoi ? Est-ce toujours utile&nbsp;?</li>
+    <li>Comment sont lancés les tests? (buildout & co)</li>
+    <li>Quand et quels tags pour construire les images&nbsp;?</li>
     <li>etc</li>
     <li>TODO</li>
     </ol>
@@ -256,7 +257,7 @@ Link: https://github.com/IMIO/gha
 <!-- Rémi -->
 
 ---
-![bg](assets/fond.png)
+![bg](assets/fond8.png)
 ## Runner Strategy
 
 
@@ -342,15 +343,23 @@ GHA triggers via Rest API
 <!-- Rémi -->
 
 ---
-![bg](assets/fond6.png)
+![bg](assets/fond4.png)
 ## Observability
 
-- Lightweight Mattermost notification: short status + link (no noisy full logs).
-- Actions logs (raw) in GitHub web UI
-- Plone logs : rundeck & Kibana
-- Container-level metrics (Prometheus + Grafana)
+<div class="img-text-row-imio">
+  <div class="text">
+    <h4>Includes</h4>
+    <ul>
+    <li>Lightweight Mattermost notification: short status + link (no noisy full logs).</li>
+    <li>Actions logs (raw) in GitHub web UI</li>
+    <li>Plone logs : rundeck & </li>
+    <li>Container-level metrics (Prometheus + Grafana)</li>
+    <li>Dashboard WIP</li>
+    </ul>
+  </div>
+  <img src="assets/imio-explorateur.png" alt="imio-container"/>
+</div>
 
-Dashboard WIP
 
 <!-- Rémi -->
 

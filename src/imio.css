@@ -11,8 +11,8 @@ section {
   gap: 24px;
 }
 .img-text-row-bio img {
-  width: 128px;
-  height: 128px;
+  width: 180px;
+  height: 180px;
   border-radius: 16px;
   object-fit: cover;
 }
@@ -43,6 +43,7 @@ section {
   width:35%;
   height:35%;
   border-radius: 16px;
+  margin-bottom: 30%;
 }
 .img-text-row-imio .text {
   flex: 1;
