@@ -264,7 +264,7 @@ timeline
            : Progressive cutover (deploy stages → GHA)
     2024-08: Dual-run (Jenkins + GHA) for critical products
     2024-09: Full production deployments via GHA
-           : Final failover (Jenkins disk crash - irreversible)
+           : Final failover
            : Jenkins decommission
     2025-06: Shared workflows
 -->
