@@ -55,7 +55,7 @@ jobs:
       - name: Stage changed files.
         run: |
           mv dist/slides.html dist/index.html
-          git add -f dist/index.html
+          git add -f dist/index.html dist/slides.pdf
       - name: Commit changed files.
         run: git commit -m "Auto updating presentation files."
       - name: Push code to main
