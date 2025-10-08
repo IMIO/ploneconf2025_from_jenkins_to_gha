@@ -324,22 +324,23 @@ timeline
 - Observability
 
 ---
-![bg](assets/fond11.png)
-## The 'gha' Repository (Building Blocks)
+![bg](assets/fond4.png)
+## The 'gha' Repository
+![bg](assets/github-gha.png)
 
-TODO
 
 Reusable composite actions (examples):
-- setup-plone-environment
-- run-plone-tests
-- build-plone-image
-- deploy-helm-release
-- notify-mattermost (rate-limited)
-- tag-and-publish (integrates zest.releaser conventions)
+- Build and push a docker image
+- Run plone tests
+- Build deb package
+- Release Helm Chat
+- Notify on mattermost
+
 
 Link: https://github.com/IMIO/gha
 
-Encapsulate complexity → keep workflows thin.
+### Encapsulate complexity 
+### → Keep workflows thin.
 
 <!-- Rémi -->
 
@@ -347,26 +348,41 @@ Encapsulate complexity → keep workflows thin.
 ![bg](assets/fond.png)
 ## Runner Strategy
 
-Self-hosted via ARC:
+
+<div class="img-text-row-imio">
+  <img src="assets/argocd.png" alt="argocd"/>
+  <div class="text">
+    <h4>Self-hosted via ARC</h4>
+    <ul>
+    <li>Auto-scaling ephemeral runners (security + cleanliness)</li>
+    <li>Resource quotas per namespace</li>
+    <li>Fast spin-up (prebaked image)</li>
+    <li>Same network (reach internal services / servers)</li>
+    </ul>
+  </div>
+</div>
+
 https://github.com/actions/actions-runner-controller
 
-Why:
-- Auto-scaling ephemeral runners (security + cleanliness)
-- Resource quotas per namespace
-- Fast spin-up (prebaked image)
-- Same network (reach internal services / servers)
 <!-- Rémi -->
 ---
 ![bg](assets/fond2.png)
 ## Runner Docker Image
 
-Includes:
-- Python (multiple versions)
-- Plone buildout deps (C libs: libxml2, libjpeg, zlib...)
-- Node.js
-- caching dirs structured (/cache/buildout, pip)
+<div class="img-text-row-imio">
+  <img src="assets/imio-container.png" alt="imio-container"/>
+  <div class="text">
+    <h4>Includes</h4>
+    <ul>
+      <li>Python (multiple versions)</li>
+      <li>Plone buildout deps (C libs: libxml2, libjpeg, zlib...)</li>
+      <li>caching dirs structured (/cache/buildout, pip)</li>
+      <li>Versioned & scanned (Trivy)</li>
+    </ul>
+  </div>
+</div>
 
-Versioned & scanned (Trivy) → “infrastructure you can diff.”
+
 <!-- Benoît -->
 ---
 ![bg](assets/fond3.png)
@@ -410,7 +426,7 @@ Some long-running operations still in Rundeck:
 - Instances reboot
 - Upgrade-steps
 
-GHA triggers via API (signed request)
+GHA triggers via Rest API
 
 <!-- Rémi -->
 
