@@ -8,16 +8,14 @@ paginate: true
 footer: "PloneConf & PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In"
 theme: imio
 ---
-
-
-# Jenkins Out, GitHub Actions In
-### How We Made the Leap
-(Plone-focused CI/CD modernization)
-![bg](assets/fond.png)
-
-Lots of Plone products, one aging Jenkins box...
-Time to evolve.
-
+![bg](assets/fond8.png)
+<div class="center">
+<h1>Jenkins Out, GitHub Actions In</h1>
+<h3>How We Made the Leap</h3>
+<p>(Plone-focused CI/CD modernization)<br />
+Lots of Plone products, one aging Jenkins box...<br />
+Time to evolve.</p>
+</div>
 <div class="logo-row">
   <img class="pycon" src="assets/pyconfinland.png" alt="PyCon Finland">
   <img src="assets/ploneconf2025.png" alt="PloneConf 2025">
@@ -30,7 +28,7 @@ Time to evolve.
 
 ## Who ?
 
-![bg](assets/fond7.png)
+![bg](assets/fond10.png)
 
 ### Benoît
 
@@ -148,7 +146,7 @@ Key difference today:
 
 <!-- Rémi -->
 ---
-![bg](assets/fond6.png)
+![bg](assets/fond5.png)
 ## Why Migrate? (High-Level)
 
 <div class="img-text-row-imio">
@@ -186,7 +184,7 @@ Decision principle: minimize friction + follow upstream culture.
 <img src="assets/MigrationPhases.png" alt="Migration phases" class="img-migration-phases" />
 <!-- Benoît
 https://www.mermaidchart.com/app/projects/ad5d26cc-69a9-4a3b-b625-7a64ef6c03e8/diagrams/7eb0a929-db20-4674-9341-dfd996eb8eaa/version/v0.1/edit
-
+<!--
 timeline
     title Migration Phases
     2021-02: Some repos using GHA tests
@@ -228,12 +226,23 @@ timeline
 ![bg](assets/fond10.png)
 ## Design Goals
 
-- One mental model per repo (tests → build → deploy)
-- Explicit environments: dev / staging / prod
-- Idempotent deploy steps
-- Reusable composite actions (gha repo)
-- Deterministic runner image (pin dependencies)
-- Observability
+<div class="img-text-row-imio">
+  <div class="text">
+    <h4>Questions we asked :</h4>
+    <ul>
+      <li>One mental model per repo (tests → build → deploy)</li>
+      <li>Explicit environments: dev / staging / prod</li>
+      <li>Idempotent deploy steps</li>
+      <li>Reusable composite actions (gha repo)</li>
+      <li>Deterministic runner image (pin dependencies)</li>
+      <li>Observability</li>
+    </ul>
+  </div>
+  <img src="assets/imio-architect.png" alt="iMio architect"/>
+</div>
+
+
+
 
 ---
 ![bg](assets/fond4.png)
@@ -282,7 +291,6 @@ https://github.com/actions/actions-runner-controller
 ## Runner Docker Image
 
 <div class="img-text-row-imio">
-  <img src="assets/imio-container.png" alt="imio-container"/>
   <div class="text">
     <h4>Includes</h4>
     <ul>
@@ -292,6 +300,7 @@ https://github.com/actions/actions-runner-controller
       <li>Versioned & scanned (Trivy)</li>
     </ul>
   </div>
+  <img src="assets/imio-container.png" alt="imio-container"/>
 </div>
 
 

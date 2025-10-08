@@ -2,8 +2,17 @@
 @import 'default';
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+h1 {
+    color: black;
+}
 section {
  font-family: "Quicksand", sans-serif;
+}
+.center {
+    text-align: center;
+}
+footer {
+    color:black;
 }
 .img-text-row-bio {
   display: flex;
