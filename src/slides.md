@@ -158,7 +158,7 @@ Time to evolve.
 ![bg](assets/fond.png)
 ## iMio
 <div class="img-text-row-imio">
-  <img src="assets/imio-garcon.png" alt="iMio garçon">
+  <img src="assets/imio-garcon.png" alt="iMio garçon" />
   <div class="text">
     <ul>
     <li>Provides IT services to ~400 local authorities</li>
@@ -175,15 +175,20 @@ Time to evolve.
 ![bg](assets/fond4.png)
 ## Agenda (25 min)
 
-1. Context & Legacy Pain (3')
-2. Why Migrate? (4')
-3. Strategy & Process (5')
-4. Technical Architecture (5')
-5. Demo: Deployment Flow (4')
-6. Tips, Fun Fact & Failures (2')
-7. Future / WIP (2')
-
-Q&A spills into hallway 🙂
+<div class="img-text-row-imio">
+  <div class="text">
+    <ol>
+      <li>Context & Legacy Pain (3')</li>
+      <li>Why Migrate? (4')</li>
+      <li>Strategy & Process (5')</li>
+      <li>Technical Architecture (5')</li>
+      <li>Demo: Deployment Flow (4')</li>
+      <li>Tips, Fun Fact & Failures (2')</li>
+      <li>Future / WIP (2')</li>
+    </ol>
+  </div>
+  <img src="assets/imio-calendar.png" alt="iMio calendar" />
+</div>
 
 <!-- Benoît -->
 ---
@@ -208,15 +213,23 @@ Key difference today:
 
 ## The Legacy Setup (Reality Check)
 
-- Single physical server (Ubuntu 14.x)
-- Jenkins + a lot of plugins
-- Groovy pipelines of... varying quality
-- Hard to upgrade (plugin dependency hell)
-- Credential sprawl
-- Snowflake state (deployed with iac, but not maintained anymore)
+<div class="img-text-row-imio">
+  <img src="assets/imio-server.png" alt="iMio server" />
+  <div class="text">
+    <ul>
+      <li>Single physical server (Ubuntu 14.x)</li>
+      <li>Jenkins + a lot of plugins</li>
+      <li>Groovy pipelines of... varying quality</li>
+      <li>Hard to upgrade (plugin dependency hell)</li>
+      <li>Credential sprawl</li>
+      <li>Snowflake state (deployed with iac, but not maintained anymore)</li>
+    </ul>
+  </div>
+</div>
 
-Risk ↑ / Confidence ↓ / Bus factor = 1.5
+### Risk ↑ / Confidence ↓ / Bus factor = 1.5
 <!-- Benoît -->
+
 ---
 ![bg](assets/fond5.png)
 <img src="assets/cedric-funfacts.jpg" alt="Fun facts" class="img-fun-facts" />
