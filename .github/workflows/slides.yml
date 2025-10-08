@@ -33,19 +33,18 @@ jobs:
         run: npm ci
       - name: Set envivonment var for chrome sandbox
         run: echo "CHROME_NO_SANDBOX=1" >> $GITHUB_ENV
-      - name: Test chrome environment var
-        run: echo $CHROME_NO_SANDBOX
+      # - name: Test chrome environment var
+      #   run: echo $CHROME_NO_SANDBOX
       - name: Set envivonment for puppeteer timeout
         run: echo "PUPPETEER_TIMEOUT=0" >> $GITHUB_ENV
-      - name: Test puppet environment var
-        run: echo $PUPPETEER_TIMEOUT
+      # - name: Test puppet environment var
+      #   run: echo $PUPPETEER_TIMEOUT
       - name: Build Marp slide deck
         run: CHROME_PATH=$(npx -y @puppeteer/browsers@latest install chrome@stable --path $(realpath ./tmp) | awk '{print $2}') npm run build:all
       - uses: actions/upload-artifact@v4
         with:
           name: slides
-          path: |
-            dist/*.pdf
+          path: dist/slides.pdf
       - name: Update username config.
         run: git config --local user.name "github-actions[bot]"
       - name: Update the user email config.
@@ -58,6 +57,8 @@ jobs:
         run: git commit -m "Auto updating presentation files."
       - name: Push code to main
         run: git push origin main
+      - name: copy assets
+        run: cp -r src/assets dist/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
