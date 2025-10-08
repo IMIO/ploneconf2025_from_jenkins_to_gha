@@ -239,11 +239,18 @@ Key difference today:
 ![bg](assets/fond6.png)
 ## Why Migrate? (High-Level)
 
-- Consolidate around where code lives (GitHub)
-- Align with Plone community practices
-- Remove plugin fragility
-- Horizontal scale via Kubernetes
-- Isolation per job
+<div class="img-text-row-imio">
+  <div class="text">
+    <ul>
+      <li>Consolidate around where code lives (GitHub)</li>
+      <li>Align with Plone community practices</li>
+      <li>Remove plugin fragility</li>
+      <li>Horizontal scale via Kubernetes</li>
+      <li>Isolation per job</li>
+    </ul>
+  </div>
+  <img src="assets/imio-interrogation.png" alt="iMio interrogation"/>
+</div>
 
 <!-- Rémi -->
 ---
@@ -285,17 +292,24 @@ timeline
 ![bg](assets/fond9.png)
 ## Talking to Teams
 
-Questions we asked:
+<div class="img-text-row-imio">
+  <img src="assets/imio-meeting.png" alt="iMio meeting"/>
+  <div class="text">
+    <h4>Questions we asked :</h4>
+    <ol>
+    <li>Does the actual workflow still suits your needs ?</li>
+    <li>How would you improve it ?</li>
+    <li>Qu'est-ce qui trigger quoi ? Est-ce toujours utile ?</li>
+    <li>Comment sont lancés les tests ? (buildout & co)</li>
+    <li>Quand et quels tags pour construire les images ?</li>
+    <li>etc</li>
+    <li>TODO</li>
+    </ol>
+  </div>
+</div>
 
-1. Does the actual workflow still suits your needs ?
-2. How would you improve it ?
 
 
-Qu'est-ce qui trigger quoi ? Est-ce toujours utile ?
-Comment sont lancés les tests ? (buildout & co)
-Quand et quels tags pour construire les images ?
-etc
-TODO
 
 
 ---
