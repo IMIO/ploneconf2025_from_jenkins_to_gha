@@ -54,7 +54,7 @@ jobs:
         run: git config --local user.email "github-actions[bot]@users.noreply.github.com"
       - name: Stage changed files.
         run: |
-          git mv dist/slides.html dist/index.html
+          mv dist/slides.html dist/index.html
           git add -f dist/index.html
       - name: Commit changed files.
         run: git commit -m "Auto updating presentation files."
