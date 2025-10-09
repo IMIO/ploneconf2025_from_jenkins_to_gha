@@ -140,7 +140,7 @@ Key difference today:
 <!-- Benoît -->
 
 ---
-![bg](assets/fond4.png)
+![bg](assets/fond2.png)
 
 ## The Legacy Setup (Reality Check)
 
@@ -155,10 +155,10 @@ Key difference today:
       <li>Credential sprawl</li>
       <li>Snowflake state (deployed with iac, but not maintained anymore)</li>
     </ul>
+    <h3>Risk ↑ / Confidence ↓ / Bus factor = 1.5</h3>
   </div>
 </div>
 
-### Risk ↑ / Confidence ↓ / Bus factor = 1.5
 <!-- Benoît -->
 
 ---
@@ -173,6 +173,7 @@ Key difference today:
 <div class="img-text-row-imio">
   <div class="text">
     <ul>
+      <li>Jenkins server was on its last legs</li>
       <li>Consolidate around where code lives (GitHub)</li>
       <li>Align with Plone community practices</li>
       <li>Remove plugin fragility</li>
