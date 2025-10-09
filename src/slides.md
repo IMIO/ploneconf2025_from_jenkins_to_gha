@@ -94,7 +94,7 @@ Time to evolve.
       <li>Our missions</li>
       <ul>
         <li>Mutualise IT solutions</li>
-        <li>support digitalisation</li>
+        <li>Support digitalisation</li>
       </ul>
     </ul>
   </div>
@@ -168,7 +168,10 @@ _footer: ""
 ![bg](assets/fond5.png)
 <img src="assets/cedric-funfacts.jpg" alt="Fun facts" class="img-fun-facts" />
 
-<!-- Rémi -->
+<!-- Rémi
+  When we told our sysadmins that we were doing a talk about Jenkins,
+  Here was the reply of Cédric...
+-->
 ---
 ![bg](assets/fond9.png)
 
@@ -187,7 +190,9 @@ _footer: ""
   <img src="assets/imio-interrogation.png" alt="iMio interrogation"/>
 </div>
 
-<!-- Rémi -->
+<!-- Rémi
+  This brings us to the next slide about why migrate ?
+-->
 ---
 ![bg](assets/fond7.png)
 
@@ -201,7 +206,6 @@ _footer: ""
       <li>Would require migration, retraining, and changes on dev local setups (& minds 🤡)</li>
       <li>Marketplace ecosystem (actions)</li>
       <li>ARC (actions-runner-controller) maturity</li>
-      <li>Decision principle: minimise friction + follow upstream culture.</li>
     </ul>
   </div>
 </div>
@@ -252,28 +256,30 @@ timeline
 </div>
 
 <!-- Benoît
-TODO : vérifier formulations phrases
 -->
 
 
 ---
 ![bg](assets/fond4.png)
-## The 'gha' Repository
-![bg](assets/github-gha.png)
 
+<div class="img-text-row-imio">
+  <div class="text">
+    <h2>The 'gha' Repository</h2>
+    <p>Reusable composite actions (examples)</p>
+    <ul>
+      <li>Build and push a docker image</li>
+      <li>Run plone tests</li>
+      <li>Call Rundeck job</li>
+      <li>Build deb package</li>
+      <li>Release Helm Chart</li>
+      <li>Notify on mattermost</li>
+    </ul>
+    <h3>Encapsulate complexity</h3>
+    <h3>→ Keep workflows thin</h3>
 
-Reusable composite actions (examples):
-- Build and push a docker image
-- Run plone tests
-- Build deb package
-- Release Helm Chat
-- Notify on mattermost
-
-
-Link: https://github.com/IMIO/gha
-
-### Encapsulate complexity
-### → Keep workflows thin
+  </div>
+  <img class="wh50"src="assets/github-gha.png" alt="github-gha"/>
+</div>
 
 <!-- Rémi
 keep workflows thin and easy to understand
@@ -298,9 +304,10 @@ keep workflows thin and easy to understand
   </div>
 </div>
 
-https://github.com/actions/actions-runner-controller
-
-<!-- Rémi -->
+<!-- Rémi 
+  We are hosting ourselve the runners and orchestrating them with the 
+  action runner controler, so we can benefit from auto-scaling, and so on
+-->
 ---
 ![bg](assets/fond4.png)
 
@@ -334,16 +341,15 @@ https://github.com/actions/actions-runner-controller
   </div>
 </div>
 <!-- Benoît
-Démo ?
 Consistent rules → reduces cognitive load.
  -->
 
 ---
 ![bg](assets/fond3.png)
-## DEMO
 
 <div class="img-text-row-imio">
   <div class="text">
+    <h2>DEMO</h2>
     <video width="640" height="480" controls>
       <source src="assets/vidtest.mp4" type="video/mp4">
       Your browser does not support the video tag.
@@ -379,9 +385,10 @@ Same as Jenkins:
   <img class="wh50"src="assets/rundeck.png" alt="rundeck"/>
 </div>
 
-
 <!-- Rémi
-  faire le lien avec la démo
+  As you saw on the demo, the last step is often a call to a rundeck job.
+  This allows us to make operations needed to promote a new app version like images pull, instances reboot and so on.
+  FYI, it will be deprecated when we will migrate to kube.
 -->
 
 ---
@@ -402,7 +409,9 @@ Same as Jenkins:
 </div>
 
 
-<!-- Rémi -->
+<!-- Rémi
+  During the process, we kept an eye to observability, with things like mattermost notifications, actions logs, plone logs, and so on.
+-->
 
 ---
 <!--
@@ -484,13 +493,14 @@ _footer: ""
   <img class="wh50" src="assets/qr-presentation.png" alt="imio-ripjenkins"/>
 </div>
 
-
+<!-- Benoît & Rémi -->
 
 ---
 ![bg](assets/fond.png)
 # Resources
 - iMio : https://www.imio.be
 - iMio GHA composite actions: https://github.com/IMIO/gha
+- iMio runner docker image base : https://github.com/IMIO/docker-bases/tree/master/actions-runner
 - Actions Runner Controller: https://github.com/actions/actions-runner-controller
 - zest.releaser: https://pypi.org/project/zest.releaser/
 - ArgoCD: https://argo-cd.readthedocs.io/
