@@ -189,13 +189,20 @@ Key difference today:
 ![bg](assets/fond7.png)
 ## Why Not GitLab CI?
 
-We already had GitLab internally BUT:
-- All Plone products already on GitHub
-- Would require migration, retraining, and changes on dev local setups (& minds 🤡)
-- Marketplace ecosystem (actions)
-- ARC (actions-runner-controller) maturity
+<div class="img-text-row-imio">
+  <img src="assets/imio-exclamation.png" alt="iMio interrogation"/>
+  <div class="text">
+    <ul>
+    <li>We already had GitLab internally BUT</li>
+    <li>All Plone products already on GitHub</li>
+    <li>Would require migration, retraining, and changes on dev local setups (& minds 🤡)</li>
+    <li>Marketplace ecosystem (actions)</li>
+    <li>ARC (actions-runner-controller) maturity</li>
+    <li>Decision principle: minimize friction + follow upstream culture.</li>
+    </ul>
+  </div>
+</div>
 
-Decision principle: minimize friction + follow upstream culture.
 
 <!-- Rémi -->
 
@@ -220,50 +227,30 @@ timeline
     2025-06: Shared workflows
 -->
 
----
-![bg](assets/fond9.png)
-## Talking to Teams
-
-<div class="img-text-row-imio">
-  <img src="assets/imio-meeting.png" alt="iMio meeting"/>
-  <div class="text">
-    <h4>Questions we asked :</h4>
-    <ol>
-    <li>Does the actual workflow still suits your needs ?</li>
-    <li>How would you improve it ?</li>
-    <li>Qu'est-ce qui trigger quoi ? Est-ce toujours utile&nbsp;?</li>
-    <li>Comment sont lancés les tests? (buildout & co)</li>
-    <li>Quand et quels tags pour construire les images&nbsp;?</li>
-    <li>etc</li>
-    <li>TODO</li>
-    </ol>
-  </div>
-</div>
-
-
-
-
 
 ---
 ![bg](assets/fond10.png)
-## Design Goals
+## Talking to teams
 
 <div class="img-text-row-imio">
   <div class="text">
     <h4>Questions we asked :</h4>
     <ul>
-      <li>One mental model per repo (tests → build → deploy)</li>
-      <li>Explicit environments: dev / staging / prod</li>
-      <li>Idempotent deploy steps</li>
-      <li>Reusable composite actions (gha repo)</li>
-      <li>Deterministic runner image (pin dependencies)</li>
-      <li>Observability</li>
+      <li>Does the actual workflow still suits your needs?</li>
+      <ul>
+            <li>What triggers the CI/CD ?</li>
+      </ul>
+      <li>How would you improve it?</li>
+      <li>Should we keep explicit environments: staging / prod?</li>
+      <li>Which metrics do you need?</li>
     </ul>
   </div>
-  <img src="assets/imio-architect.png" alt="iMio architect"/>
+  <img src="assets/imio-meeting.png" alt="iMio meeting"/>
 </div>
 
-
+<!-- Benoît
+TODO : vérifier formulations phrases
+-->
 
 
 ---
@@ -282,10 +269,12 @@ Reusable composite actions (examples):
 
 Link: https://github.com/IMIO/gha
 
-### Encapsulate complexity 
-### → Keep workflows thin.
+### Encapsulate complexity
+### → Keep workflows thin
 
-<!-- Rémi -->
+<!-- Rémi
+keep workflows thin and easy to understand
+-->
 
 ---
 ![bg](assets/fond8.png)
@@ -297,10 +286,10 @@ Link: https://github.com/IMIO/gha
   <div class="text">
     <h4>Self-hosted via ARC</h4>
     <ul>
-    <li>Auto-scaling ephemeral runners (security + cleanliness)</li>
-    <li>Resource quotas per namespace</li>
-    <li>Fast spin-up (prebaked image)</li>
-    <li>Same network (reach internal services / servers)</li>
+      <li>Auto-scaling ephemeral runners (security + cleanliness)</li>
+      <li>Resource quotas per namespace</li>
+      <li>Fast spin-up (prebaked image)</li>
+      <li>Same network (reach internal services / servers)</li>
     </ul>
   </div>
 </div>
@@ -346,16 +335,28 @@ Consistent rules → reduces cognitive load.
  -->
 
 ---
-![bg](assets/fond4.png)
-## Environment Policy
+![bg](assets/fond3.png)
+## DEMO
 
+<div class="img-text-row-imio">
+  <div class="text">
+    <video width="640" height="480" controls>
+      <source src="assets/vidtest.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <img src="assets/imio-demo.png" alt="imio-demo"/>
+</div>
+
+<!-- Benoît & Rémi
 Same as Jenkins:
 
 - Staging: every merge to `main` auto-deploys to staging instances (copy of some prod instances)
 - Prod: only annotated tag on `main` + schedule (3 AM next day)
 - Rollback: git tag revert + redeploy (immutable images retained) (! Database)
 
-<!-- Benoît -->
+-->
+
 
 ---
 ![bg](assets/fond5.png)
@@ -368,7 +369,9 @@ Some long-running operations still in Rundeck:
 
 GHA triggers via Rest API
 
-<!-- Rémi -->
+<!-- Rémi
+  faire le lien avec la démo
+-->
 
 ---
 ![bg](assets/fond4.png)
@@ -380,9 +383,8 @@ GHA triggers via Rest API
     <ul>
     <li>Lightweight Mattermost notification: short status + link (no noisy full logs).</li>
     <li>Actions logs (raw) in GitHub web UI</li>
-    <li>Plone logs : rundeck & </li>
+    <li>Plone logs : rundeck</li>
     <li>Container-level metrics (Prometheus + Grafana)</li>
-    <li>Dashboard WIP</li>
     </ul>
   </div>
   <img src="assets/imio-explorateur.png" alt="imio-container"/>
@@ -400,7 +402,7 @@ GHA triggers via Rest API
   <div class="text">
     <ul>
     <li>Physical Jenkins server died (disk failure)</li>
-    <li>BEFORE migration completed.</li>
+    <li><b>BEFORE</b> migration completed.</li>
     <li>No data salvage possible. (but not needed)</li>
     <li>Migration ROI validated instantly 🙂</li>
     </ul>
@@ -416,18 +418,27 @@ GHA triggers via Rest API
 
 - Shared reusable workflows (org-level)
 - Kubernetes-native Plone (full containerization & scaling)
-- Align with [plone/meta] best practices (watching upstream)
+- Align with [plone/meta] best practices
 - Dashboard replacing noisy Mattermost spam
 
 <!-- Benoît & Rémi-->
 
 ---
-![bg](assets/fond9.png)
-## Conclusion
+<!--
+_class: center
+_footer: ""
+-->
+![bg](assets/fond6.png)
 
-Migration is an opportunity to simplify, not just port.
-todo
+<div>
+  <h1>CONCLUSION</h1>
+</div>
 
+<div>
+
+![w:425px](assets/imio-ripjenkins.png)
+
+</div>
 <!-- Benoît & Rémi -->
 
 
