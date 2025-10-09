@@ -332,10 +332,10 @@ https://github.com/actions/actions-runner-controller
 <!-- Benoît -->
 ---
 ![bg](assets/fond3.png)
-## Branch / Deploy Flow (Visual)
-<div class="img-text-row-imio" width="800px">
-  <div class="text" width="800px">
-  <img align="center" width="250px" src="assets/ReleasesProcess.png" alt="release-process">
+<div class="title-release-process">Branch / Deploy Flow</div>
+<div class="img-release-process">
+  <div class="text">
+    <img src="assets/ReleasesProcess.png" alt="release-process">
   </div>
 </div>
 <!-- Benoît

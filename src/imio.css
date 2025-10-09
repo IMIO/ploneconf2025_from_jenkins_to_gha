@@ -96,3 +96,38 @@ footer {
 .mw50 {
     width: 50%;
 }
+.img-fun-facts {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 65%;
+  max-width: 90vw;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+.img-release-process {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.img-release-process img {
+  width:35%;
+  height:25%;
+  border-radius: 16px;
+  margin-bottom: 30%;
+}
+.img-release-process .text {
+  flex: 1;
+}
+.title-release-process {
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+    /* margin-bottom: 24px; */
+    text-align: left;
+    display: block;
+}
