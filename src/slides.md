@@ -107,15 +107,15 @@ Time to evolve.
 
 <div class="img-text-row-imio">
   <div class="text">
-  <h2>Agenda (25 min)</h2>
+  <h2>Agenda</h2>
     <ol>
-      <li>Context & Legacy Pain (3')</li>
-      <li>Why Migrate? (4')</li>
-      <li>Strategy & Process (5')</li>
-      <li>Technical Architecture (5')</li>
-      <li>Demo: Deployment Flow (4')</li>
-      <li>Tips, Fun Fact & Failures (2')</li>
-      <li>Future / WIP (2')</li>
+      <li>Context & Legacy Pain</li>
+      <li>Why Migrate?</li>
+      <li>Strategy & Process</li>
+      <li>Technical Architecture</li>
+      <li>Demo: Deployment Flow</li>
+      <li>Fun Fact</li>
+      <li>Future / WIP</li>
     </ol>
   </div>
   <img src="assets/imio-calendar.png" alt="iMio calendar" />
