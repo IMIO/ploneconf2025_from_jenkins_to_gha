@@ -8,7 +8,7 @@ h1 {
 section {
  font-family: "Quicksand", sans-serif;
 }
-.center {
+section.center div{
     text-align: center;
 }
 footer {

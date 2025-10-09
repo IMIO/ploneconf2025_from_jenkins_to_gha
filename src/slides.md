@@ -8,21 +8,31 @@ paginate: true
 footer: "PloneConf & PyCon Finland 2025 • iMio • Jenkins Out → GitHub Actions In"
 theme: imio
 ---
+<!--
+_footer: ""
+_paginate: skip
+_class: center
+-->
 ![bg](assets/fond8.png)
-<div class="center">
-<h1>Jenkins Out, GitHub Actions In</h1>
-<h3>How We Made the Leap</h3>
-<p>(Plone-focused CI/CD modernization)<br />
-Lots of Plone products, one aging Jenkins box...<br />
-Time to evolve.</p>
+
+<div>
+
+# Jenkins Out, GitHub Actions In
+### How We Made the Leap
+
+(Plone-focused CI/CD modernization)
+Lots of Plone products, one aging Jenkins box...
+Time to evolve.
+
 </div>
+
 <div class="logo-row">
   <img class="pycon" src="assets/pyconfinland.png" alt="PyCon Finland">
   <img src="assets/ploneconf2025.png" alt="PloneConf 2025">
   <img src="assets/imio_logo.svg" alt="iMio">
 </div>
 
-<!-- _footer: "" -->
+
 
 ---
 
@@ -71,10 +81,21 @@ Time to evolve.</p>
   <img src="assets/imio-garcon.png" alt="iMio garçon" />
   <div class="text">
     <ul>
-    <li>Provides IT services to ~400 local authorities</li>
-    <li>Municipalities, CPAS, provinces, police zones, rescue zones</li>
-    <li>11 different applications → 1200+ instances</li>
-    <li>Our mission: Mutualize IT solutions and support digitalization</li>
+      <li>Public company in Belgium</li>
+      <li>Provides IT services to ~400 local authorities</li>
+      <ul>
+        <li>Municipalities, CPAS, provinces, police zones, rescue zones</li>
+      </ul>
+      <li>11 different applications → 1200+ instances</li>
+      <li>Python is in our ADN</li>
+      <ul>
+        <li>Plone, Odoo and Django projects</li>
+      </ul>
+      <li>Our missions</li>
+      <ul>
+        <li>Mutualize IT solutions</li>
+        <li>support digitalization</li>
+      </ul>
     </ul>
   </div>
 </div>
@@ -376,10 +397,18 @@ GHA triggers via Rest API
 ![bg](assets/fond7.png)
 ## Fun Fact (Timing Was Perfect)
 
-Physical Jenkins server died (disk failure)
-BEFORE migration completed.
-No data salvage possible. (but not needed)
-Migration ROI validated instantly 🙂
+<div class="img-text-row-imio">
+  <img src="assets/imio-server-onfire.png" alt="imio-onfire"/>
+  <div class="text">
+    <ul>
+    <li>Physical Jenkins server died (disk failure)</li>
+    <li>BEFORE migration completed.</li>
+    <li>No data salvage possible. (but not needed)</li>
+    <li>Migration ROI validated instantly 🙂</li>
+    </ul>
+  </div>
+</div>
+
 
 <!-- Benoît -->
 
