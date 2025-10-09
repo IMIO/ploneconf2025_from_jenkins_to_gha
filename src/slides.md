@@ -76,10 +76,10 @@ Time to evolve.
 ---
 
 ![bg](assets/fond4.png)
-## iMio
 <div class="img-text-row-imio">
   <img src="assets/imio-garcon.png" alt="iMio garçon" />
   <div class="text">
+    <h2>What is iMio?</h2>
     <ul>
       <li>Public company in Belgium</li>
       <li>Provides IT services to ~400 local authorities</li>
@@ -142,11 +142,10 @@ Key difference today:
 ---
 ![bg](assets/fond2.png)
 
-## The Legacy Setup (Reality Check)
-
 <div class="img-text-row-imio">
-  <img src="assets/imio-server.png" alt="iMio server" />
+  <img class="wh45" src="assets/imio-server.png" alt="iMio server" />
   <div class="text">
+    <h2>The Legacy Setup</h2>
     <ul>
       <li>Single physical server (Ubuntu 14.x)</li>
       <li>Jenkins + a lot of plugins</li>
@@ -191,11 +190,11 @@ _footer: ""
 <!-- Rémi -->
 ---
 ![bg](assets/fond7.png)
-## Why Not GitLab CI?
 
 <div class="img-text-row-imio">
   <img src="assets/imio-exclamation.png" alt="iMio interrogation"/>
   <div class="text">
+    <h2>Why Not GitLab CI?</h2>
     <ul>
     <li>We already had GitLab internally BUT</li>
     <li>All Plone products already on GitHub</li>
@@ -249,7 +248,7 @@ timeline
       <li>Which metrics do you need?</li>
     </ul>
   </div>
-  <img src="assets/imio-meeting.png" alt="iMio meeting"/>
+  <img class="wh40" src="assets/imio-meeting.png" alt="iMio meeting"/>
 </div>
 
 <!-- Benoît
@@ -398,12 +397,15 @@ GHA triggers via Rest API
 <!-- Rémi -->
 
 ---
+<!--
+_footer: ""
+-->
 ![bg](assets/fond7.png)
-## Fun Fact (Timing Was Perfect)
 
 <div class="img-text-row-imio">
   <img src="assets/imio-server-onfire.png" alt="imio-onfire"/>
   <div class="text">
+    <h2>Fun Fact (Timing Was Perfect)</h2>
     <ul>
     <li>Physical Jenkins server died (disk failure)</li>
     <li><b>BEFORE</b> migration completed.</li>
@@ -434,13 +436,17 @@ _footer: ""
 -->
 ![bg](assets/fond6.png)
 
-<div>
-  <h1>CONCLUSION</h1>
+
+<div class="img-text-row-imio">
+  <img class="wh40" src="assets/imio-ripjenkins.png" alt="imio-ripjenkins"/>
+  <div class="text">
+    <span class="big-text">
+      Farewell Jenkins, you won’t be missed.
+    </span>
+  </div>
 </div>
 
-<div>
 
-![w:425px](assets/imio-ripjenkins.png)
 
 </div>
 <!-- Benoît & Rémi -->

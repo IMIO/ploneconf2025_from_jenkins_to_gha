@@ -54,6 +54,20 @@ footer {
   border-radius: 16px;
   margin-bottom: 30%;
 }
+.img-text-row-imio img.wh40 {
+  width: 40%;
+  height: 40%;
+  border-radius: 16px;
+  margin-bottom: 30%;
+}
+
+.img-text-row-imio img.wh45 {
+  width: 45%;
+  height: 45%;
+  border-radius: 16px;
+  margin-bottom: 30%;
+}
+
 .img-text-row-imio .text {
   flex: 1;
 }
@@ -126,4 +140,8 @@ footer {
 }
 .little-link {
     font-size: 0.7em;
+}
+.big-text {
+    font-size: 2em;
+    font-weight: 900;
 }
