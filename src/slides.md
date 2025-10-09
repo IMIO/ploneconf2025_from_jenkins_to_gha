@@ -84,7 +84,7 @@ Time to evolve.
       <li>Public company in Belgium</li>
       <li>Provides IT services to ~400 local authorities</li>
       <ul>
-        <li>Municipalities, CPAS, provinces, police zones, rescue zones</li>
+        <li>Municipalities, Public Centre for Social Welfare, provinces, police zones, rescue zones</li>
       </ul>
       <li>11 different applications → 1200+ instances</li>
       <li>Python is in our ADN</li>
@@ -93,8 +93,8 @@ Time to evolve.
       </ul>
       <li>Our missions</li>
       <ul>
-        <li>Mutualize IT solutions</li>
-        <li>support digitalization</li>
+        <li>Mutualise IT solutions</li>
+        <li>support digitalisation</li>
       </ul>
     </ul>
   </div>
@@ -162,6 +162,10 @@ Key difference today:
 <!-- Benoît -->
 
 ---
+<!--
+_class: center
+_footer: ""
+-->
 ![bg](assets/fond5.png)
 <img src="assets/cedric-funfacts.jpg" alt="Fun facts" class="img-fun-facts" />
 
@@ -198,7 +202,7 @@ Key difference today:
     <li>Would require migration, retraining, and changes on dev local setups (& minds 🤡)</li>
     <li>Marketplace ecosystem (actions)</li>
     <li>ARC (actions-runner-controller) maturity</li>
-    <li>Decision principle: minimize friction + follow upstream culture.</li>
+    <li>Decision principle: minimise friction + follow upstream culture.</li>
     </ul>
   </div>
 </div>
