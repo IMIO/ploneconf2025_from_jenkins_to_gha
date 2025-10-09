@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:all": "npm run build:html && npm run build:pdf && npm run build:pp",
+    "build:htmlpdf": "npm run build:html && npm run build:pdf",
     "build:html": "marp",
     "build:pdf": "marp --pdf",
     "build:pp": "marp --pptx",
