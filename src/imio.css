@@ -115,19 +115,15 @@ footer {
   gap: 24px;
 }
 .img-release-process img {
-  width:35%;
-  height:25%;
+  width:45%;
+  height:45%;
   border-radius: 16px;
   margin-bottom: 30%;
+  margin-left: 30%;
 }
 .img-release-process .text {
   flex: 1;
 }
-.title-release-process {
-    font-size: 1em;
-    font-weight: 700;
-    color: black;
-    /* margin-bottom: 24px; */
-    text-align: left;
-    display: block;
+.little-link {
+    font-size: 0.7em;
 }

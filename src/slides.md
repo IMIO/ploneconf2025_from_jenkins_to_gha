@@ -316,7 +316,7 @@ https://github.com/actions/actions-runner-controller
 <div class="img-text-row-imio">
   <div class="text">
     <h4>Includes</h4>
-    <a href="https://github.com/IMIO/docker-bases/tree/master/actions-runner">https://github.com/IMIO/docker-bases/tree/master/actions-runner</a>
+    <a href="https://github.com/IMIO/docker-bases/tree/master/actions-runner" class="little-link">https://github.com/IMIO/docker-bases/tree/master/actions-runner</a>
     <ul>
       <li>Python (multiple versions)</li>
       <li>Plone buildout deps (C libs: libxml2, libjpeg, zlib...)</li>
@@ -332,9 +332,11 @@ https://github.com/actions/actions-runner-controller
 <!-- Benoît -->
 ---
 ![bg](assets/fond3.png)
-<div class="title-release-process">Branch / Deploy Flow</div>
 <div class="img-release-process">
-  <div class="text">
+  <div>
+    <h3>Branch / Deploy Flow</h3>
+  </div>
+  <div>
     <img src="assets/ReleasesProcess.png" alt="release-process">
   </div>
 </div>
