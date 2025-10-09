@@ -68,6 +68,13 @@ footer {
   margin-bottom: 30%;
 }
 
+.img-text-row-imio img.wh50 {
+  width: 50%;
+  height: 50%;
+  border-radius: 16px;
+  margin-bottom: 30%;
+}
+
 .img-text-row-imio .text {
   flex: 1;
 }

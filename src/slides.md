@@ -75,7 +75,7 @@ Time to evolve.
 
 ---
 
-![bg](assets/fond4.png)
+![bg](assets/fond5.png)
 <div class="img-text-row-imio">
   <img src="assets/imio-garcon.png" alt="iMio garçon" />
   <div class="text">
@@ -281,18 +281,19 @@ keep workflows thin and easy to understand
 
 ---
 ![bg](assets/fond8.png)
-## Runner Strategy
-
 
 <div class="img-text-row-imio">
-  <img src="assets/argocd.png" alt="argocd"/>
+  <img class="wh50"src="assets/argocd.png" alt="argocd"/>
   <div class="text">
-    <h4>Self-hosted via ARC</h4>
+    <h2>Runner Strategy</h2>
+    <ul>
+    <li>Self-hosted via ARC</li>
     <ul>
       <li>Auto-scaling ephemeral runners (security + cleanliness)</li>
       <li>Resource quotas per namespace</li>
       <li>Fast spin-up (prebaked image)</li>
       <li>Same network (reach internal services / servers)</li>
+    </ul>
     </ul>
   </div>
 </div>
