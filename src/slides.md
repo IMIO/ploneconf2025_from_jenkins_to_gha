@@ -302,12 +302,12 @@ https://github.com/actions/actions-runner-controller
 
 <!-- Rémi -->
 ---
-![bg](assets/fond2.png)
-## Runner Docker Image
+![bg](assets/fond4.png)
 
 
 <div class="img-text-row-imio">
   <div class="text">
+    <h2>Runner Docker Image</h2>
     <h4>Includes</h4>
     <a href="https://github.com/IMIO/docker-bases/tree/master/actions-runner" class="little-link">https://github.com/IMIO/docker-bases/tree/master/actions-runner</a>
     <ul>
@@ -317,7 +317,7 @@ https://github.com/actions/actions-runner-controller
       <li>Versioned & scanned (Trivy)</li>
     </ul>
   </div>
-  <img src="assets/imio-container.png" alt="imio-container"/>
+  <img class="wh40" src="assets/imio-container.png" alt="imio-container"/>
 </div>
 
 
@@ -364,14 +364,21 @@ Same as Jenkins:
 
 ---
 ![bg](assets/fond5.png)
-## Rundeck Jobs (Legacy Tie-In)
 
-Some long-running operations still in Rundeck:
-- Docker images pull
-- Instances reboot
-- Upgrade-steps
+<div class="img-text-row-imio">
+  <div class="text">
+    <h2>Rundeck Jobs (Legacy Tie-In)</h2>
+    <ul>
+    <li>Some long-running operations still in Rundeck</li>
+    <li>Docker images pull</li>
+    <li>Instances reboot</li>
+    <li>Upgrade-steps</li>
+    <li>GHA triggers via Rest API</li>
+    </ul>
+  </div>
+  <img class="wh50"src="assets/rundeck.png" alt="rundeck"/>
+</div>
 
-GHA triggers via Rest API
 
 <!-- Rémi
   faire le lien avec la démo
@@ -379,10 +386,10 @@ GHA triggers via Rest API
 
 ---
 ![bg](assets/fond4.png)
-## Observability
 
 <div class="img-text-row-imio">
   <div class="text">
+    <h2>Observability</h2>
     <h4>Includes</h4>
     <ul>
     <li>Lightweight Mattermost notification: short status + link (no noisy full logs).</li>
@@ -421,12 +428,19 @@ _footer: ""
 
 ---
 ![bg](assets/fond8.png)
-## Current WIP / Future
 
-- Shared reusable workflows (org-level)
-- Kubernetes-native Plone (full containerization & scaling)
-- Align with [plone/meta] best practices
-- Dashboard replacing noisy Mattermost spam
+<div class="img-text-row-imio">
+  <div class="text">
+    <h2>Current WIP / Future</h2>
+    <ul>
+    <li>Shared reusable workflows (org-level)</li>
+    <li>Kubernetes-native Plone (full containerization & scaling)</li>
+    <li>Align with [plone/meta] best practices</li>
+    <li>Dashboard replacing noisy Mattermost spam</li>
+    </ul>
+  </div>
+  <img src="assets/imio-architect.png" alt="imio-architect"/>
+</div>
 
 <!-- Benoît & Rémi-->
 
@@ -455,16 +469,31 @@ _footer: ""
 
 ---
 ![bg](assets/fond10.png)
-## Thank you
+
+<div class="img-text-row-imio">
+  <div class="text">
+    <span class="big-text">
+      Thank you
+    </span>
+    <br />
+    <span class="big-text">
+      Any question?
+    </span>
+    <p>Feel free to scan the QR-Code to download the slides</p>
+  </div>
+  <img class="wh50" src="assets/qr-presentation.png" alt="imio-ripjenkins"/>
+</div>
 
 
+
+---
+![bg](assets/fond.png)
+# Resources
+- iMio : https://www.imio.be
+- iMio GHA composite actions: https://github.com/IMIO/gha
 - Actions Runner Controller: https://github.com/actions/actions-runner-controller
-- IMIO GHA composite actions: https://github.com/IMIO/gha
 - zest.releaser: https://pypi.org/project/zest.releaser/
 - ArgoCD: https://argo-cd.readthedocs.io/
-- Our slides: https://imio.github.io/ploneconf2025_from_jenkins_to_gha/
-
-## Questions ?
 
 
 
