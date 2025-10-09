@@ -32,7 +32,9 @@ Time to evolve.
   <img src="assets/imio_logo.svg" alt="iMio">
 </div>
 
-
+<!--
+  Thank you for being here. We are going to talk about our journey from Jenkins to Github actions.
+-->
 
 ---
 
@@ -211,7 +213,9 @@ _footer: ""
 </div>
 
 
-<!-- Rémi -->
+<!-- Rémi 
+  We had 2 obviouses choices. Github actions or gitlab-ci
+  -->
 
 ---
 ![bg](assets/fond8.png)
@@ -220,6 +224,7 @@ _footer: ""
 <img src="assets/MigrationPhases.png" alt="Migration phases" class="img-migration-phases" />
 <!-- Benoît
 https://www.mermaidchart.com/app/projects/ad5d26cc-69a9-4a3b-b625-7a64ef6c03e8/diagrams/7eb0a929-db20-4674-9341-dfd996eb8eaa/version/v0.1/edit
+-->
 <!--
 timeline
     title Migration Phases
