@@ -104,10 +104,10 @@ Time to evolve.
 <!-- Rémi -->
 ---
 ![bg](assets/fond8.png)
-## Agenda (25 min)
 
 <div class="img-text-row-imio">
   <div class="text">
+  <h2>Agenda (25 min)</h2>
     <ol>
       <li>Context & Legacy Pain (3')</li>
       <li>Why Migrate? (4')</li>
@@ -170,11 +170,11 @@ _footer: ""
 
 <!-- Rémi -->
 ---
-![bg](assets/fond5.png)
-## Why Migrate? (High-Level)
+![bg](assets/fond9.png)
 
 <div class="img-text-row-imio">
   <div class="text">
+    <h2>Why Migrate? (High-Level)</h2>
     <ul>
       <li>Jenkins server was on its last legs</li>
       <li>Consolidate around where code lives (GitHub)</li>
@@ -195,13 +195,13 @@ _footer: ""
   <img src="assets/imio-exclamation.png" alt="iMio interrogation"/>
   <div class="text">
     <h2>Why Not GitLab CI?</h2>
+    <p>We already had GitLab internally <b>BUT</b></p>
     <ul>
-    <li>We already had GitLab internally BUT</li>
-    <li>All Plone products already on GitHub</li>
-    <li>Would require migration, retraining, and changes on dev local setups (& minds 🤡)</li>
-    <li>Marketplace ecosystem (actions)</li>
-    <li>ARC (actions-runner-controller) maturity</li>
-    <li>Decision principle: minimise friction + follow upstream culture.</li>
+      <li>All Plone products already on GitHub</li>
+      <li>Would require migration, retraining, and changes on dev local setups (& minds 🤡)</li>
+      <li>Marketplace ecosystem (actions)</li>
+      <li>ARC (actions-runner-controller) maturity</li>
+      <li>Decision principle: minimise friction + follow upstream culture.</li>
     </ul>
   </div>
 </div>
