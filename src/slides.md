@@ -332,23 +332,15 @@ https://github.com/actions/actions-runner-controller
 ---
 ![bg](assets/fond3.png)
 ## Branch / Deploy Flow (Visual)
-
-### TODO (demo ?)
-```mermaid
-flowchart LR
-    A[Dev Commit (feature/*)] -->|PR| B[Pull Request]
-    B -->|Merge| C[dev branch]
-    C -->|CI + Auto Deploy| D[Dev Sandbox]
-    C -->|PR or Fast-Forward| E[main]
-    E -->|CI + Immediate Deploy| F[Staging]
-    E -->|Tag (zest.releaser)| G[(Tag vX.Y.Z)]
-    G -->|Scheduled Deploy 03:00| H[Production]
-    H -->|Post Deploy Checks| I[Notify + Metrics]
-```
-
+<div class="img-text-row-imio" width="800px">
+  <div class="text" width="800px">
+  <img align="center" width="250px" src="assets/ReleasesProcess.png" alt="release-process">
+  </div>
+</div>
+<!-- Benoît
+Démo ?
 Consistent rules → reduces cognitive load.
-
-<!-- Benoît -->
+ -->
 
 ---
 ![bg](assets/fond4.png)
