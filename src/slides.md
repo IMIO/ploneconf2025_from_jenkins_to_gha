@@ -11,11 +11,8 @@ theme: imio
 <!--
 _footer: ""
 _paginate: skip
-_class: center
+_class: center bg8
 -->
-![bg](assets/fond8.png)
-
-<div>
 
 # Jenkins Out, GitHub Actions In
 ### How We Made the Leap
@@ -24,7 +21,6 @@ _class: center
 Lots of Plone products, one aging Jenkins box...
 Time to evolve.
 
-</div>
 
 <div class="logo-row">
   <img class="pycon" src="assets/pyconfinland.png" alt="PyCon Finland">
@@ -37,10 +33,11 @@ Time to evolve.
 -->
 
 ---
+<!--
+_class: bg10
+-->
 
 ## Who ?
-
-![bg](assets/fond10.png)
 
 ### Benoît
 
@@ -52,8 +49,8 @@ Time to evolve.
     Plone contributor, Plone foundation member
     <div class="github-row">
       <img src="assets/github.png" alt="GitHub" />
-    <span class="username">bsuttor</span>
-</div>
+      <span class="username">bsuttor</span>
+    </div>
   </div>
 </div>
 
@@ -67,19 +64,21 @@ Time to evolve.
     16 years in municipal IT · SmartWeb @ iMio since 2022 <br>DevOps since 2024
     <br>Open-source & learning mindset
     <div class="github-row">
-    <img src="assets/github.png" alt="GitHub" />
-    <span class="username">remdub</span>
-</div>
+      <img src="assets/github.png" alt="GitHub" />
+      <span class="username">remdub</span>
+    </div>
   </div>
 </div>
 
 <!-- Benoît & Rémi-->
 
 ---
+<!--
+_class: bg5
+-->
 
-![bg](assets/fond5.png)
 <div class="img-text-row-imio">
-  <img src="assets/imio-garcon.png" alt="iMio garçon" />
+  <img class="wh40" src="assets/imio-garcon.png" alt="iMio garçon" />
   <div class="text">
     <h2>What is iMio?</h2>
     <ul>
@@ -89,7 +88,7 @@ Time to evolve.
         <li>Municipalities, Public Centre for Social Welfare, provinces, police zones, rescue zones</li>
       </ul>
       <li>11 different applications → 1200+ instances</li>
-      <li>Python is in our ADN</li>
+      <li>Python is in our DNA</li>
       <ul>
         <li>Plone, Odoo and Django projects</li>
       </ul>
@@ -105,7 +104,9 @@ Time to evolve.
 
 <!-- Rémi -->
 ---
-![bg](assets/fond8.png)
+<!--
+_class: bg8
+-->
 
 <div class="img-text-row-imio">
   <div class="text">
@@ -120,11 +121,12 @@ Time to evolve.
       <li>Future / WIP</li>
     </ol>
   </div>
-  <img src="assets/imio-calendar.png" alt="iMio calendar" />
+  <img class="wh40" src="assets/imio-calendar.png" alt="iMio calendar" />
 </div>
 
 <!-- Benoît -->
 ---
+
 ![bg](assets/fond3.png)
 ### Throwback: PloneConf 2022
 
@@ -142,7 +144,9 @@ Key difference today:
 <!-- Benoît -->
 
 ---
-![bg](assets/fond2.png)
+<!--
+_class: bg2
+-->
 
 <div class="img-text-row-imio">
   <img class="wh45" src="assets/imio-server.png" alt="iMio server" />
@@ -154,7 +158,7 @@ Key difference today:
       <li>Groovy pipelines of... varying quality</li>
       <li>Hard to upgrade (plugin dependency hell)</li>
       <li>Credential sprawl</li>
-      <li>Snowflake state (deployed with iac, but not maintained anymore)</li>
+      <li>Snowflake state (deployed with infrastructure as code, but not maintained anymore)</li>
     </ul>
     <h3>Risk ↑ / Confidence ↓ / Bus factor = 1.5</h3>
   </div>
@@ -164,18 +168,20 @@ Key difference today:
 
 ---
 <!--
-_class: center
+_class: bg5
 _footer: ""
 -->
-![bg](assets/fond5.png)
-<img src="assets/cedric-funfacts.jpg" alt="Fun facts" class="img-fun-facts" />
+<img src="assets/cedric-funfacts.jpg" alt="Fun facts" class="img-fun-facts" /> 
+
 
 <!-- Rémi
   When we told our sysadmins that we were doing a talk about Jenkins,
   Here was the reply of Cédric...
 -->
 ---
-![bg](assets/fond9.png)
+<!--
+_class: bg9
+-->
 
 <div class="img-text-row-imio">
   <div class="text">
@@ -189,17 +195,19 @@ _footer: ""
       <li>Isolation per job</li>
     </ul>
   </div>
-  <img src="assets/imio-interrogation.png" alt="iMio interrogation"/>
+  <img class="wh35" src="assets/imio-interrogation.png" alt="iMio interrogation"/>
 </div>
 
 <!-- Rémi
   This brings us to the next slide about why migrate ?
 -->
 ---
-![bg](assets/fond7.png)
+<!--
+_class: bg7
+-->
 
 <div class="img-text-row-imio">
-  <img src="assets/imio-exclamation.png" alt="iMio interrogation"/>
+  <img class="wh35" src="assets/imio-exclamation.png" alt="iMio interrogation"/>
   <div class="text">
     <h2>Why Not GitLab CI?</h2>
     <p>We already had GitLab internally <b>BUT</b></p>
@@ -218,7 +226,10 @@ _footer: ""
   -->
 
 ---
-![bg](assets/fond8.png)
+<!--
+_class: bg8
+-->
+
 ## Timeline
 
 <img src="assets/MigrationPhases.png" alt="Migration phases" class="img-migration-phases" />
@@ -241,7 +252,10 @@ timeline
 
 
 ---
-![bg](assets/fond10.png)
+<!--
+_class: bg10
+-->
+
 ## Talking to teams
 
 <div class="img-text-row-imio">
@@ -265,7 +279,9 @@ timeline
 
 
 ---
-![bg](assets/fond4.png)
+<!--
+_class: bg4
+-->
 
 <div class="img-text-row-imio">
   <div class="text">
@@ -291,7 +307,9 @@ keep workflows thin and easy to understand
 -->
 
 ---
-![bg](assets/fond8.png)
+<!--
+_class: bg8
+-->
 
 <div class="img-text-row-imio">
   <img class="wh50"src="assets/argocd.png" alt="argocd"/>
@@ -314,8 +332,9 @@ keep workflows thin and easy to understand
   action runner controler, so we can benefit from auto-scaling, and so on
 -->
 ---
-![bg](assets/fond4.png)
-
+<!--
+_class: bg4
+-->
 
 <div class="img-text-row-imio">
   <div class="text">
@@ -325,7 +344,7 @@ keep workflows thin and easy to understand
     <ul>
       <li>Python (multiple versions)</li>
       <li>Plone buildout deps (C libs: libxml2, libjpeg, zlib...)</li>
-      <li>caching dirs structured (/cache/buildout, pip)</li>
+      <li>Caching dirs structured (/cache/buildout, pip)</li>
       <li>Versioned & scanned (Trivy)</li>
     </ul>
   </div>
@@ -336,7 +355,10 @@ keep workflows thin and easy to understand
 
 <!-- Benoît -->
 ---
-![bg](assets/fond3.png)
+<!--
+_class: bg3
+-->
+
 <div class="img-release-process">
   <div>
     <h3>Branch / Deploy Flow</h3>
@@ -350,7 +372,9 @@ Consistent rules → reduces cognitive load.
  -->
 
 ---
-![bg](assets/fond3.png)
+<!--
+_class: bg10
+-->
 
 <div class="img-text-row-imio">
   <div class="text">
@@ -360,7 +384,7 @@ Consistent rules → reduces cognitive load.
       Your browser does not support the video tag.
     </video>
   </div>
-  <img src="assets/imio-demo.png" alt="imio-demo"/>
+  <img class="wh40" src="assets/imio-demo.png" alt="imio-demo"/>
 </div>
 
 <!-- Benoît & Rémi
@@ -374,7 +398,9 @@ Same as Jenkins:
 
 
 ---
-![bg](assets/fond5.png)
+<!--
+_class: bg5
+-->
 
 <div class="img-text-row-imio">
   <div class="text">
@@ -397,7 +423,10 @@ Same as Jenkins:
 -->
 
 ---
-![bg](assets/fond4.png)
+<!--
+_class: bg4
+-->
+
 
 <div class="img-text-row-imio">
   <div class="text">
@@ -410,7 +439,7 @@ Same as Jenkins:
     <li>Container-level metrics (Prometheus + Grafana)</li>
     </ul>
   </div>
-  <img src="assets/imio-explorateur.png" alt="imio-container"/>
+  <img class="wh35" src="assets/imio-explorateur.png" alt="imio-container"/>
 </div>
 
 
@@ -421,11 +450,11 @@ Same as Jenkins:
 ---
 <!--
 _footer: ""
+_class: bg7
 -->
-![bg](assets/fond7.png)
 
 <div class="img-text-row-imio">
-  <img src="assets/imio-server-onfire.png" alt="imio-onfire"/>
+  <img class="wh35" src="assets/imio-server-onfire.png" alt="imio-onfire"/>
   <div class="text">
     <h2>Fun Fact (Timing Was Perfect)</h2>
     <ul>
@@ -441,7 +470,9 @@ _footer: ""
 <!-- Benoît -->
 
 ---
-![bg](assets/fond8.png)
+<!--
+_class: bg8
+-->
 
 <div class="img-text-row-imio">
   <div class="text">
@@ -453,18 +484,16 @@ _footer: ""
     <li>Dashboard replacing noisy Mattermost spam</li>
     </ul>
   </div>
-  <img src="assets/imio-architect.png" alt="imio-architect"/>
+  <img class="wh35" src="assets/imio-architect.png" alt="imio-architect"/>
 </div>
 
 <!-- Benoît & Rémi-->
 
 ---
 <!--
-_class: center
+_class: center bg6 vcenter
 _footer: ""
 -->
-![bg](assets/fond6.png)
-
 
 <div class="img-text-row-imio">
   <img class="wh40" src="assets/imio-ripjenkins.png" alt="imio-ripjenkins"/>
@@ -482,7 +511,9 @@ _footer: ""
 
 
 ---
-![bg](assets/fond10.png)
+<!--
+_class: bg10
+-->
 
 <div class="img-text-row-imio">
   <div class="text">
@@ -501,11 +532,13 @@ _footer: ""
 <!-- Benoît & Rémi -->
 
 ---
-![bg](assets/fond.png)
+<!--
+_class: bg1
+-->
 # Resources
-- iMio : https://www.imio.be
+- iMio: https://www.imio.be
 - iMio GHA composite actions: https://github.com/IMIO/gha
-- iMio runner docker image base : https://github.com/IMIO/docker-bases/tree/master/actions-runner
+- iMio runner docker image base: https://github.com/IMIO/docker-bases/tree/master/actions-runner
 - Actions Runner Controller: https://github.com/actions/actions-runner-controller
 - zest.releaser: https://pypi.org/project/zest.releaser/
 - ArgoCD: https://argo-cd.readthedocs.io/

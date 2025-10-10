@@ -8,8 +8,46 @@ h1 {
 section {
  font-family: "Quicksand", sans-serif;
 }
-section.center div{
+section.center * {
     text-align: center;
+}
+section.vcenter div.text {
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+}
+section.bg1  {
+  background: url("assets/fond.png") center center / cover no-repeat;
+}
+section.bg2  {
+  background: url("assets/fond2.png") center center / cover no-repeat;
+}
+section.bg3  {
+  background: url("assets/fond3.png") center center / cover no-repeat;
+}
+section.bg4  {
+  background: url("assets/fond4.png") center center / cover no-repeat;
+}
+section.bg5  {
+  background: url("assets/fond5.png") center center / cover no-repeat;
+}
+section.bg6  {
+  background: url("assets/fond6.png") center center / cover no-repeat;
+}
+section.bg7  {
+  background: url("assets/fond7.png") center center / cover no-repeat;
+}
+section.bg8  {
+  background: url("assets/fond8.png") center center / cover no-repeat;
+}
+section.bg9  {
+  background: url("assets/fond9.png") center center / cover no-repeat;
+}
+section.bg10  {
+  background: url("assets/fond10.png") center center / cover no-repeat;
+}
+section.bg11  {
+  background: url("assets/fond11.png") center center / cover no-repeat;
 }
 footer {
     color:black;
@@ -49,30 +87,24 @@ footer {
   gap: 24px;
 }
 .img-text-row-imio img {
-  width:35%;
-  height:35%;
   border-radius: 16px;
   margin-bottom: 30%;
 }
-.img-text-row-imio img.wh40 {
+.wh35 {
+  width: 35%;
+  height: 35%;
+}
+.wh40 {
   width: 40%;
   height: 40%;
-  border-radius: 16px;
-  margin-bottom: 30%;
 }
-
-.img-text-row-imio img.wh45 {
+.wh45 {
   width: 45%;
   height: 45%;
-  border-radius: 16px;
-  margin-bottom: 30%;
 }
-
-.img-text-row-imio img.wh50 {
+.wh50 {
   width: 50%;
   height: 50%;
-  border-radius: 16px;
-  margin-bottom: 30%;
 }
 
 .img-text-row-imio .text {
@@ -117,17 +149,12 @@ footer {
 .mw50 {
     width: 50%;
 }
+
 .img-fun-facts {
   position: absolute;
   top: 24px;
-  left: 50%;
-  transform: translateX(-50%);
+  max-height: 100vh;
   display: block;
-  width: 65%;
-  max-width: 90vw;
-  height: auto;
-  margin: 0 auto;
-  border-radius: 18px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
 }
 .img-release-process {
