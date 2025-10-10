@@ -141,7 +141,9 @@ Key difference today:
 - Ecosystem maturity (2022 → 2025): composite actions, Action Runner Controler
 </div>
 
-<!-- Benoît -->
+<!-- Benoît
+I made a talk 3 years ago about how we deployed our instances. We still used the same process, but no more the same tools
+-->
 
 ---
 <!--
@@ -164,7 +166,10 @@ _class: bg2
   </div>
 </div>
 
-<!-- Benoît -->
+<!-- Benoît
+With our old Jenkins server, we had a single physical server
+I was the only one who maintained the server
+-->
 
 ---
 <!--
@@ -234,6 +239,9 @@ _class: bg8
 
 <img src="assets/MigrationPhases.png" alt="Migration phases" class="img-migration-phases" />
 <!-- Benoît
+So in 2021 we started to use github actions on some repo for testing our code, as the community
+in 2024, we have Jenkins, GHA and gitlab-ci in our infrastructure, we choose to remove one of these 3 ... This is the beginning of the end of Jenkins
+
 https://www.mermaidchart.com/app/projects/ad5d26cc-69a9-4a3b-b625-7a64ef6c03e8/diagrams/7eb0a929-db20-4674-9341-dfd996eb8eaa/version/v0.1/edit
 -->
 <!--
@@ -275,6 +283,8 @@ _class: bg10
 </div>
 
 <!-- Benoît
+One of the big part was to verify if our "old" deployement steps was still used and suits to our needs. We have some questions to ask to yourself
+
 -->
 
 
@@ -340,7 +350,7 @@ _class: bg4
   <div class="text">
     <h2>Runner Docker Image</h2>
     <h4>Includes</h4>
-    <a href="https://github.com/IMIO/docker-bases/tree/master/actions-runner" class="little-link">https://github.com/IMIO/docker-bases/tree/master/actions-runner</a>
+    <a href="https://github.com/IMIO/docker-bases/tree/master/actions-runner" class="little-link">https://github.com/IMIO/docker-bases/actions-runner</a>
     <ul>
       <li>Python (multiple versions)</li>
       <li>Plone buildout deps (C libs: libxml2, libjpeg, zlib...)</li>
@@ -353,7 +363,9 @@ _class: bg4
 
 
 
-<!-- Benoît -->
+<!-- Benoît
+We have now 3/4 differents actions runner images used depending on our needs
+-->
 ---
 <!--
 _class: bg3
@@ -368,6 +380,7 @@ _class: bg3
   </div>
 </div>
 <!-- Benoît
+Here we see what dev have to understand to deploy on app. We choose to use zest.releaser because we work with this package to release our eggs, so dev know and use often zest.releaser
 Consistent rules → reduces cognitive load.
  -->
 
@@ -467,7 +480,10 @@ _class: bg7
 </div>
 
 
-<!-- Benoît -->
+<!-- Benoît
+One week before the end of migration, one disk crash on your old OVH server (11 years) not able to recover
+
+-->
 
 ---
 <!--
