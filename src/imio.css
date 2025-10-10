@@ -124,7 +124,18 @@ footer {
   width: 50%;
   height: 50%;
 }
-
+.wh60 {
+  width: 60%;
+  height: 60%;
+}
+.wh70 {
+  width: 70%;
+  height: 70%;
+}
+.wh80 {
+  width: 80%;
+  height: 80%;
+}
 .img-text-row-imio .text {
   flex: 1;
 }
@@ -196,4 +207,13 @@ footer {
 .big-text {
     font-size: 2em;
     font-weight: 900;
+}
+
+section.video img.animated-img {
+  animation: bounce 10s infinite alternate;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(100px); }
+  100% { transform: translateY(-700px); }
 }

@@ -368,17 +368,15 @@ We have now 3/4 differents actions runner images used depending on our needs
 -->
 ---
 <!--
-_class: bg3
+_class: bg3 video
 -->
-
-<div class="img-release-process">
-  <div>
-    <h3>Branch / Deploy Flow</h3>
-  </div>
-  <div>
-    <img src="assets/ReleasesProcess.png" alt="release-process">
-  </div>
+<div>
+  <span class="big-text">Branch / Deploy Flow</span>
+  <img class="wh80" src="assets/imio-bucheron-container.png" alt="imio-container"/>
 </div>
+<img class="animated-img" src="assets/ReleasesProcess.png" alt="release-process">
+
+
 <!-- Benoît
 Here we see what dev have to understand to deploy on app. We choose to use zest.releaser because we work with this package to release our eggs, so dev know and use often zest.releaser
 Consistent rules → reduces cognitive load.
