@@ -386,18 +386,17 @@ Consistent rules → reduces cognitive load.
 
 ---
 <!--
-_class: bg10
+_class: bg10 video
+_footer: ""
 -->
 
-<div class="img-text-row-imio">
-  <div class="text">
-    <h2>DEMO</h2>
-    <video width="640" height="480" controls>
-      <source src="assets/rush1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-  <img class="wh40" src="assets/imio-demo.png" alt="imio-demo"/>
+<video controls>
+  <source src="assets/rush1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<div>
+  <span class="big-text">Demo</span>
+  <img src="assets/imio-demo.png" alt="imio-demo"/>
 </div>
 
 <!-- Benoît & Rémi

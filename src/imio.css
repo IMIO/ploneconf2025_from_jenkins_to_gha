@@ -49,6 +49,20 @@ section.bg10  {
 section.bg11  {
   background: url("assets/fond11.png") center center / cover no-repeat;
 }
+section.video {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+}
+section.video video {
+  width: 800px;
+  height: auto;
+}
+section.video img {
+  object-fit: cover;
+  height: auto;
+}
 footer {
     color:black;
 }
@@ -89,6 +103,10 @@ footer {
 .img-text-row-imio img {
   border-radius: 16px;
   margin-bottom: 30%;
+}
+.wh30 {
+  width: 30%;
+  height: 30%;
 }
 .wh35 {
   width: 35%;
