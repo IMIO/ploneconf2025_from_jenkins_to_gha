@@ -148,6 +148,7 @@ I made a talk 3 years ago about how we deployed our instances. We still used the
 ---
 <!--
 _class: bg2
+_footer: ""
 -->
 
 <div class="img-text-row-imio">

@@ -210,7 +210,7 @@ footer {
 }
 
 section.video img.animated-img {
-  animation: bounce 10s infinite alternate;
+  animation: bounce 15s infinite alternate;
 }
 
 @keyframes bounce {
