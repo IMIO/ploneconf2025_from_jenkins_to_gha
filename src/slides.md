@@ -23,8 +23,8 @@ Time to evolve.
 
 
 <div class="logo-row">
-  <img class="pycon" src="assets/pyconfinland.png" alt="PyCon Finland">
   <img src="assets/ploneconf2025.png" alt="PloneConf 2025">
+  <img class="pycon" src="assets/pyconfinland.png" alt="PyCon Finland">
   <img src="assets/imio_logo.svg" alt="iMio">
 </div>
 
@@ -163,7 +163,7 @@ _footer: ""
       <li>Credential sprawl</li>
       <li>Snowflake state (deployed with infrastructure as code, but not maintained anymore)</li>
     </ul>
-    <h3>Risk ↑ / Confidence ↓ / Bus factor = 1.5</h3>
+    <h4>Risk ↑ / Confidence ↓ / Bus factor = 1.5</h4>
   </div>
 </div>
 
@@ -242,7 +242,8 @@ _class: bg8
 <!-- Benoît
 So in 2021 we started to use github actions on some repo for testing our code, as the community
 in 2024, we have Jenkins, GHA and gitlab-ci in our infrastructure, we choose to remove one of these 3 ... This is the beginning of the end of Jenkins
-
+-->
+<!--
 https://www.mermaidchart.com/app/projects/ad5d26cc-69a9-4a3b-b625-7a64ef6c03e8/diagrams/7eb0a929-db20-4674-9341-dfd996eb8eaa/version/v0.1/edit
 -->
 <!--
