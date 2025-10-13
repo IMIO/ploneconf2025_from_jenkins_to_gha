@@ -140,17 +140,13 @@ footer {
   flex: 1;
 }
 .img-fun-facts {
-  position: absolute;
-  top: 24px;
-  left: 50%;
-  transform: translateX(-50%);
   display: block;
-  width: 65%;
-  max-width: 90vw;
-  height: auto;
   margin: 0 auto;
+  height: auto;
   border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+section.p-0 {
+    padding: 0;
 }
 .logo-row {
   display: flex;
@@ -179,13 +175,6 @@ footer {
     width: 50%;
 }
 
-.img-fun-facts {
-  position: absolute;
-  top: 24px;
-  max-height: 100vh;
-  display: block;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-}
 .img-release-process {
   display: flex;
   align-items: flex-start;

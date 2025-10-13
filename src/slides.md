@@ -174,7 +174,7 @@ I was the only one who maintained the server
 
 ---
 <!--
-_class: bg5
+_class: bg5 p-0
 _footer: ""
 -->
 <img src="assets/cedric-funfacts.jpg" alt="Fun facts" class="img-fun-facts" /> 
