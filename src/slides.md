@@ -239,6 +239,7 @@ _class: bg8
 ## Timeline
 
 <img src="assets/MigrationPhases.png" alt="Migration phases" class="img-migration-phases" />
+
 <!-- Benoît
 So in 2021 we started to use github actions on some repo for testing our code, as the community.
 in 2024, we have Jenkins, GHA and gitlab-ci in our infrastructure, we choose to remove one of these 3 ... This is the beginning of the end of Jenkins
@@ -247,6 +248,7 @@ In July, we deployed docker based runner on your fresh new Kubernetes cluster an
 In Augustus, we had Jenkins and gihub actions works in //. But gha do not deploy anything
 In septembre, we made the switch and we decommission Jenkins
 It was a quick migration, only 3 months
+
 -->
 
 ---
