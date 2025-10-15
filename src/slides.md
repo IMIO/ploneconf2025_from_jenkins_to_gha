@@ -379,7 +379,7 @@ _class: bg10 video
 _footer: ""
 -->
 
-<video controls>
+<video autoplay controls disablepictureinpicture>
   <source src="assets/rush1.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
