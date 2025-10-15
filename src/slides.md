@@ -240,26 +240,14 @@ _class: bg8
 
 <img src="assets/MigrationPhases.png" alt="Migration phases" class="img-migration-phases" />
 <!-- Benoît
-So in 2021 we started to use github actions on some repo for testing our code, as the community
+So in 2021 we started to use github actions on some repo for testing our code, as the community.
 in 2024, we have Jenkins, GHA and gitlab-ci in our infrastructure, we choose to remove one of these 3 ... This is the beginning of the end of Jenkins
+In June, we made an inventory of all Jenkins pipeline based on groovy
+In July, we deployed docker based runner on your fresh new Kubernetes cluster and we create a central GHA repo
+In Augustus, we had Jenkins and gihub actions works in //. But gha do not deploy anything
+In septembre, we made the switch and we decommission Jenkins
+It was a quick migration, only 3 months
 -->
-<!--
-https://www.mermaidchart.com/app/projects/ad5d26cc-69a9-4a3b-b625-7a64ef6c03e8/diagrams/7eb0a929-db20-4674-9341-dfd996eb8eaa/version/v0.1/edit
--->
-<!--
-timeline
-    title Migration Phases
-    2021-02: Some repos using GHA tests
-    2024-06: Inventory Jenkins pipelines / classify (keep / refactor / drop)
-    2024-07: Build base runner Docker image + ARC PoC
-           : Create central 'gha' repo (composite actions)
-           : Progressive cutover (deploy stages → GHA)
-    2024-08: Dual-run (Jenkins + GHA) for critical products
-    2024-09: Full production deployments via GHA
-           : Jenkins decommission
-    2025-06: Shared workflows
--->
-
 
 ---
 <!--
@@ -381,7 +369,6 @@ _class: bg3 video
 
 <!-- Benoît
 Here we see what dev have to understand to deploy on app. We choose to use zest.releaser because we work with this package to release our eggs, so dev know and use often zest.releaser
-Consistent rules → reduces cognitive load.
  -->
 
 ---
