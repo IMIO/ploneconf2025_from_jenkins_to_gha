@@ -143,6 +143,7 @@ Key difference today:
 
 <!-- Benoît
 I made a talk 3 years ago about how we deployed our instances. We still used the same process, but no more the same tools
+The main difference compared with 2022, it's github actions do not exists in 2015 when we started using Jenkins
 -->
 
 ---
@@ -169,6 +170,9 @@ _footer: ""
 
 <!-- Benoît
 With our old Jenkins server, we had a single physical server
+It was very old and deploy, at the begining, with our infrastructure as code, Puppet
+But over the years and new verison of puppet, it was no more synchronized with your puppet code beacause of, basically, plugins
+Also, for convenience, everybody was admin
 I was the only one who maintained the server
 -->
 
@@ -357,6 +361,8 @@ _class: bg4
 
 <!-- Benoît
 We have now 3/4 differents actions runner images used depending on our needs
+One with for Plone with all battery included, I speak about library
+One other to ...
 -->
 ---
 <!--
@@ -370,7 +376,8 @@ _class: bg3 video
 
 
 <!-- Benoît
-Here we see what dev have to understand to deploy on app. We choose to use zest.releaser because we work with this package to release our eggs, so dev know and use often zest.releaser
+Here we see what dev have to understand to deploy on app.
+We choose to use zest.releaser because we work with this package to release our eggs, so dev know and use often zest.releaser
  -->
 
 ---
