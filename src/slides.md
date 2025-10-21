@@ -279,7 +279,7 @@ _class: bg10
 </div>
 
 <!-- Benoît
-One of the big part was to verify if our "old" deployement steps was still used and suits to our needs. We have some questions to ask to yourself
+One of the big part was to verify if our "old" deployement steps was still used and suits to our needs. We have some questions to ask to ourself
 
 -->
 
