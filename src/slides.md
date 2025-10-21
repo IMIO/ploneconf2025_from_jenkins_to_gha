@@ -231,7 +231,7 @@ _class: bg7
 </div>
 
 
-<!-- Rémi 
+<!-- Rémi
   We had 2 obviouses choices. Github actions or gitlab-ci
   -->
 
